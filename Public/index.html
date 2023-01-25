@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efferus Forlag</title>
+    <link rel="shortcut icon" href="../bilder/deciduous-tree.ico">
+    <link href="../../main_styles.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+</head>
+
+<div class="container" style="background-color: #333; height: 100vh">
+    <form action="/signup" method="POST">
+        <div class="container_textbox">
+        <h1>Meld deg på vårt nyhetsbrev</h1>
+        <p>Bli informert om kommende arrangementer, workshops og artikler i permakulturverdenen.</p>
+        </div>
+        
+        <div style="margin-bottom: 2rem;">
+
+        <input  style="padding: 1rem; background-color:#2f3542; outline: none; border: 2.5px solid white; border-radius:15px; color: white; margin-right:1rem;"
+            type="text" 
+            name="firstName" 
+            value="" 
+            placeholder="Hva heter du?"
+            />
+        <input  style="padding: 1rem; background-color:#2f3542; outline: none; border: 2.5px solid white; border-radius:15px; color: white;"
+            type="text" 
+            name="lastName" 
+            value="" 
+            placeholder="Hva er etternavnet ditt?"
+            />
+
+        </div>
+
+        <div class="email-box">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/666/666162.png">
+            <input  
+            class="tbox" 
+            type="email" 
+            name="email" 
+            value="" 
+            placeholder="Skriv inn din email"
+            />
+
+            <button class="btn5" type="submit" name="subscribe"><strong>Abonnere</strong></button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

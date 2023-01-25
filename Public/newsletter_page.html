@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efferus Forlag</title>
+    <link rel="shortcut icon" href="../bilder/deciduous-tree.ico">
+    <link href="../main_styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+    
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/NEW_index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="../bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="/NEW_index.html"><img src="../bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        
+        <li><a href="./plantebistand.html">Plantebistand</a></li>
+        <li class="services">
+          <a href="./database.html">Database</a>
+        </li>
+        <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+        <li><a href="./vision.html">Vår visjon</a></li>
+        <li><a href="./events/visitUs.html">Besøk oss</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+      </div>
+    </ul>
+</nav>
+
+<div class="container" style="background-color: #333; height: 100vh">
+    <form action="">
+        <div class="container_textbox">
+        <h1>Meld deg på vårt nyhetsbrev</h1>
+        <p>Bli informert om kommende arrangementer, workshops og artikler i permakulturverdenen.</p>
+        </div>
+        <div class="email-box">
+            <img src="../bilder/email_icon.png">
+            <input  class="tbox" type="email" name="FMAIL" value="" placeholder="Skriv inn din email">
+            <button class="btn5" type="submit" name="subscribe"><strong>Abonnere</strong></button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
