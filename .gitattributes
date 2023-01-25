@@ -1,0 +1,4 @@
+*.jpg filter=lfs diff=lfs merge=lfs -text
+subPages/* filter=lfs diff=lfs merge=lfs -text
+subPages/*.jpg filter=lfs diff=lfs merge=lfs -text
+subPages/*.html filter=lfs diff=lfs merge=lfs -text
