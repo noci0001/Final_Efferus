@@ -1,0 +1,35 @@
+[
+    {
+        "id":0,
+        "background_img":"",
+        "default_img":"./bilder/default_permaculture_article_img.png",
+        "title": "Climate Change Likely to Slow Plant Growth in Northern Hemisphere",
+        "author":"Robin Leeber",
+        "release_date": "Oct 22st 2022",
+        "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iure voluptates dolores recusandae quidem sint earum atque cumque cupiditate aliquid? Dolores velit delectus sint. Tempore eum perspiciatis fugit nesciunt rem nostrum ad mollitia excepturi repudiandae, vel error quasi reiciendis praesentium assumenda. Sequi debitis soluta quo adipisci fugiat ipsa laboriosam quas tempora saepe dolore corrupti dolores voluptatibus, error impedit sapiente odio ullam iure modi animi voluptas illum dolor. Mollitia quam voluptatibus qui incidunt sed officia. Quos dolore, fugiat amet omnis sequi magnam neque provident officiis temporibus eaque vitae maiores tempore cumque dignissimos, explicabo aliquam ipsum veritatis. Dolore laborum est veniam nihil architecto distinctio, porro ullam autem, optio voluptas nemo fugiat tempore dolorem, perspiciatis harum. Ipsum fugiat, facere quod aspernatur accusantium ab optio reiciendis molestiae provident saepe quidem dolore iusto magni perspiciatis quam doloremque nisi qui hic dignissimos rerum repellendus neque! Maxime, magni eos? Ipsa, eos eveniet molestiae adipisci aliquam quaerat, illum tenetur ut esse nihil nisi perferendis. Sunt reprehenderit illum fugit?",
+        "briefdesc": "While the higher temperatures and CO2 levels...",
+        "path": "articles/id-0.html"
+    },
+    {
+        "id":1,
+        "background_img":"./bilder/hand.png",
+        "default_img":"./bilder/default_permaculture_article_img.png",
+        "title": "Climate Change Likely to Slow Plant Growth in Northern Hemisphere",
+        "author":"Robin Leeber",
+        "release_date": "Oct 10th 2022",
+        "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iure voluptates dolores recusandae quidem sint earum atque cumque cupiditate aliquid? Dolores velit delectus sint. Tempore eum perspiciatis fugit nesciunt rem nostrum ad mollitia excepturi repudiandae, vel error quasi reiciendis praesentium assumenda. Sequi debitis soluta quo adipisci fugiat ipsa laboriosam quas tempora saepe dolore corrupti dolores voluptatibus, error impedit sapiente odio ullam iure modi animi voluptas illum dolor. Mollitia quam voluptatibus qui incidunt sed officia. Quos dolore, fugiat amet omnis sequi magnam neque provident officiis temporibus eaque vitae maiores tempore cumque dignissimos, explicabo aliquam ipsum veritatis. Dolore laborum est veniam nihil architecto distinctio, porro ullam autem, optio voluptas nemo fugiat tempore dolorem, perspiciatis harum. Ipsum fugiat, facere quod aspernatur accusantium ab optio reiciendis molestiae provident saepe quidem dolore iusto magni perspiciatis quam doloremque nisi qui hic dignissimos rerum repellendus neque! Maxime, magni eos? Ipsa, eos eveniet molestiae adipisci aliquam quaerat, illum tenetur ut esse nihil nisi perferendis. Sunt reprehenderit illum fugit?",
+        "briefdesc": "While the higher temperatures and CO2 levels...",
+        "path": "articles/id-1.html"
+    },
+    {
+        "id":2,
+        "background_img":"./bilder/veggies.jpg",
+        "default_img":"./bilder/default_permaculture_article_img.png",
+        "title": "Climate Change Likely to Slow Plant Growth in Northern Hemisphere",
+        "author":"Robin Leeber",
+        "release_date": "Sept 12st 2022",
+        "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iure voluptates dolores recusandae quidem sint earum atque cumque cupiditate aliquid? Dolores velit delectus sint. Tempore eum perspiciatis fugit nesciunt rem nostrum ad mollitia excepturi repudiandae, vel error quasi reiciendis praesentium assumenda. Sequi debitis soluta quo adipisci fugiat ipsa laboriosam quas tempora saepe dolore corrupti dolores voluptatibus, error impedit sapiente odio ullam iure modi animi voluptas illum dolor. Mollitia quam voluptatibus qui incidunt sed officia. Quos dolore, fugiat amet omnis sequi magnam neque provident officiis temporibus eaque vitae maiores tempore cumque dignissimos, explicabo aliquam ipsum veritatis. Dolore laborum est veniam nihil architecto distinctio, porro ullam autem, optio voluptas nemo fugiat tempore dolorem, perspiciatis harum. Ipsum fugiat, facere quod aspernatur accusantium ab optio reiciendis molestiae provident saepe quidem dolore iusto magni perspiciatis quam doloremque nisi qui hic dignissimos rerum repellendus neque! Maxime, magni eos? Ipsa, eos eveniet molestiae adipisci aliquam quaerat, illum tenetur ut esse nihil nisi perferendis. Sunt reprehenderit illum fugit?",
+        "briefdesc": "While the higher temperatures and CO2 levels...",
+        "path": "articles.html/id-2.html"
+    }
+]

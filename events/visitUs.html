@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us</title>
+    <link rel="shortcut icon" href="../bilder/deciduous-tree.ico">
+    <link href="../main_styles.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+</head>
+    
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="../index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="../bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="../index.html"><img src="../bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        
+        <li><a href="../plantebistand.html">Plantebistand</a></li>
+        <li class="services">
+          <a href="../database.html">Database</a>
+        </li>
+        <li><a href="../hvemer.html">Hvem er Efferus?</a></li>
+        <li><a href="../vision.html">Vår visjon</a></li>
+        <li><a href="../events/visitUs.html">Besøk oss</a></li>
+        <li><a href="../kontakt.html">Kontakt</a></li>
+      </div>
+    </ul>
+</nav>
+
+
+<main style="width: 70%; margin:auto; margin-top:5rem;">
+    <h1 style="font-size: 3rem;">Besøk oss!</h1>
+    <p>Kom innom oss og bli med på de mange workshopene som arrangeres hver måned.
+
+        Her er noen du kan være interessert i:</p>
+
+        <div id="events"></div>
+
+
+<script>
+            fetch('events.json')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    appendData(data);
+                })
+                .catch(function (err) {
+                    console.log('error: ' + err);
+                });
+            function appendData(data) {
+        
+        
+                var cards = document.getElementById("events");
+        
+                for (var i = 0; i < data.length; i++) {
+                    
+                    cards.innerHTML += `
+                        <div class="parent_ofArticlePage">
+                            <div class="div1_ofArticlePage"> 
+                                <img height="350px" src="../${data[i].background_img ? data[i].background_img : data[i].default_img }"/>
+                            </div>
+                            <div class="div2_ofArticlePage"> 
+                                <h1 id="EventTitle${i}"> </h1>
+                                <h3 id="date_of_event${i}"></h3>
+                                <h2 id="BriefDesc${i}"></h2>
+                                <h3><a href="../${data[i].path_to_event ? data[i].path_to_event : data[i].path_to_newsletter}"> ${ data[i].path_to_event ?'Meld deg på dette arrangementet' : 'Arrangementet er allerede bestått! Registrer deg for å bli varslet når den vil være tilgjengelig igjen' } </a></h3>
+                            </div>
+                        </div>
+                    `;
+        
+                    var Eventtitle = document.getElementById("EventTitle" + i);
+                    var date_of_event = document.getElementById("date_of_event" + i);
+                    var BriefDesc = document.getElementById("BriefDesc" + i);
+        
+                    Eventtitle.innerHTML = data[i].Eventtitle;
+                    date_of_event.innerHTML = data[i].date_of_event;
+                    BriefDesc.innerHTML = data[i].briefdesc;
+                }
+            }
+</script>
+</main>
+
+
+</body>
+</html>
