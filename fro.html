@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efferus Forlag</title>
+    <link rel="shortcut icon" href="./bilder/deciduous-tree.ico">
+    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+    </style>
+    <script>
+        var count = 1
+        setTimeout(demo, 500)
+        setTimeout(demo, 700)
+        setTimeout(demo, 900)
+        setTimeout(reset, 2000)
+
+        setTimeout(demo, 2500)
+        setTimeout(demo, 2750)
+        setTimeout(demo, 3050)
+
+
+        var mousein = false
+        function demo() {
+          if(mousein) return
+          document.getElementById('demo' + count++)
+              .classList.toggle('hover')
+          
+        }
+
+        function demo2() {
+          if(mousein) return
+          document.getElementById('demo2')
+              .classList.toggle('hover')
+        }
+
+        function reset() {
+          count = 1
+          var hovers = document.querySelectorAll('.hover')
+          for(var i = 0; i < hovers.length; i++ ) {
+              hovers[i].classList.remove('hover')
+          }
+        }
+
+        document.addEventListener('mouseover', function() {
+          mousein = true
+          reset()
+        })
+    </script>
+</head>
+    
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/NEW_index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        
+        <li><a href="./plantebistand.html">Plantebistand</a></li>
+        <li class="services">
+          <a href="./database.html">Database</a>
+        </li>
+        <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+        <li><a href="./vision.html">Vår visjon</a></li>
+        <li><a href="./events/visitUs.html">Besøk oss</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+      </div>
+    </ul>
+</nav>
+
+
+<!-- NAVIGATION MENU DATABASE -->
+
+<div class="nav2">
+  <div class = menu2>
+    <div class="item" id="demo1">
+      <a>Navigere til</a>
+      <div class = menu2>
+        <div class="item"><a style="position: relative; color: white;" href="#titleFro" style="color: white">TO TOP</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./fro.html" style="color: white">FRØ OG PLANTER</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./husapotek.html" style="color: white;">HUSAPOTEK</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./Oppskrifter.html" style="color: white;">KONSERVERING</a></div class="item">  
+        <div class="item"><a style="position: relative; color: white;" href="./formering.html" style="color: white;">PLANTEFORMERING</a></div class="item">   
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div style="padding-left: 5rem;">
+
+  <h1 id=titleFro style="padding-top: 2rem;">Frø- og plantekatalog</h1>
+  <h3 style="padding-bottom: 2rem;">Norsk <a href="latin.html">Latin</a></h3>
+
+  <p style="width: 80%;">Listen av frø og planter er sortert alfabetisk på norsk eller på latin hvis du trykker på linken for latin.
+    Alle frø er ferske og riktig forhåndsbehandlet. De er lagret i kalde og tørre omgivelser for å gjøre spireevnen optimal. De er ikke blitt behandlet med skadelige kjemikalier. Noen frøtyper - spesielt fra busker og trær - har svært lang spiringstid. Ytterligere informasjon om frøspiring ligger under <a href="formering.html">planteformering</a> i sidemenyen.
+    Det er normalt 4-5 dagers leveringtid på frø og planter i sommerhalvåret. Alle planter sendes mandag eller tirsdag. I vinterhalvåret er det opptil 3 ukers leveringstid.</p>
+  <h4>Planter som er tilgjengelige for salg eller som kan forhåndsbestilles for levering  2019 er merket med en rød asterisk <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /> nedenfor, eller de kan bestilles i <a href="planteshop.html">planteshop</a> </h4>
+  <h4>Løker og knoller som kan forhåndsbestilles for levering september-oktober 2019 er merket med en blå asterisk <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" width="12" height="12" /> nedenfor </h4>
+
+  <br /> 
+  <br />
+
+  <h2>Frø og planter</h2>
+  <h3>Alle frø-, knoll- og løkpakker koster <strong>25 kroner pr. stk.</strong>, med mindre annet er spesifisert.</h2>
+  <h3>Du kan betale med Visa, Mastercard, Paypal eller faktura ved henvendelse til <a href="mailto:veksthus@efferus.no">veksthus@efferus.no</a></h3>
+  <p><strong>Frakt</strong>: <br />
+  Fraktpriser genereres automatisk i paypal og kan i noen tilfelle bli feil. Er du i tvil så be heller om faktura.<p>
+<div style="padding-left: 10rem;">
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">A</h3>
+    <a href="http://efferus.no/Artemisia%20abrotanum.html">Abrodd - Artemisia abrotanum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Borago officinalis.html">Agurkurt - Borago officinalis</a><br >
+    <a href="http://efferus.no/Aquilegia vulgaris.html">Akeleie - Aquilegia vulgaris</a><br >
+    <a href="http://efferus.no/Medicago sativa.html">Alfalfa - Medicago sativa</a> <br />
+    <a href="http://efferus.no/Fragaria vesca.html">Alpejordbær - Fragaria vesca</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br> 
+    <a href="http://efferus.no/Viburnum trilobum.html">Amerikakrossved - Viburnum trilobum</a><br>
+    <a href="http://efferus.no/Diospyros virginiana.html">Amerikanske kakiplommer - Diospyros virginiana</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Nelumbo lutea.html">Amerikansk lotus - Nelumbo lutea</a><br>
+    <a href="http://efferus.no/Cornus canadensis.html">Amerikansk skrubbær - Cornus canadensis</a><br >
+    <a href="http://efferus.no/Elaeagnus commutata.html">Amerikansk sølvbusk - Elaeagnus commutata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Vaccinium macrocarpon.html">Amerikansk tranebær - Vaccinium macrocarpon</a><br >
+    <a href="http://efferus.no/Fragaria spp.html">Ananasjordbær - Fragaria x ananassa</a><br>
+    <a href="http://efferus.no/Apios americana.html">Apios americana</a><br>
+    <a href="http://efferus.no/Malva sylvestris.html">Apotekerkattost - Malva sylvestris</a><br >
+    <a href="http://efferus.no/Prunus armeniaca.html">Aprikos - Prunus armeniaca</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Cynara scolymus.html">Artisjokk - Cynara scolymus</a><br >
+    <a href="http://efferus.no/Holodiscus discolor.html">Asalspirea - Holodiscus discolor</a><br >
+    <a href="http://efferus.no/Asparagus officinalis.html">Asparges - Asparagus officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">B</h3>
+    <a href="http://efferus.no/Allium ampeloprasum babingtonii.html">Babingtons løk - Allium ampeloprasum var. babingtonii</a><br>
+    <a href="http://efferus.no/Bambus.html">Bambus </a><img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Amorpha fruticosa.html">Bastard indigo - Amorpha fruticosa</a><br >
+    <a href="http://efferus.no/Allium scorodoprasum.html">Bendelløk - Allium scorodoprasum</a><br>
+    <a href="http://efferus.no/Berberis vulgaris.html">Berberis - Berberis vulgaris</a>  <br>
+    <a href="http://efferus.no/Origanum vulgare.html">Bergmynte (Vill oregano) - Origanum vulgare</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br >
+    <a href="http://efferus.no/Poncirus trifoliata.html">Bitter appelsin - Poncirus trifoliata</a><br>
+    <a href="http://efferus.no/Rubus fruticosus.html">Bjørnebær - Rubus fruticosus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br>
+    <a href="http://efferus.no/Meum athamanticum.html">Bjørnerot - Meum athamanticum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Tropaeolum majus.html">Blomkarse - Tropaeolum majus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br >
+    <a href="http://efferus.no/Staphylea trifolia.html">Blærenøtt (Amerikansk blærenøtt) - Staphylea trifolia</a><br >
+    <a href="http://efferus.no/Staphylea pinnata.html">Blærenøtt (Europeisk blærenøtt) - Staphylea pinnata</a><br >
+    <a href="http://efferus.no/Vaccinium myrtillus.html">Blåbær - Vaccinium myrtillus</a><br >
+    <a href="http://efferus.no/Prunella vulgaris.html">Blåkoll - Prunella vulgaris</a><br>
+    <a href="http://efferus.no/Lonicera caerulea.html">Blåleddved - Lonicera caerulea</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Medicago sativa.html">Blålusern - Medicago sativa</a> <br /> 
+    <a href="http://efferus.no/Wisteria sinensis.html">Blåregn - Wisteria sinensis</a><br >
+    <a href="http://efferus.no/Typha latifolia.html">Bred dunkjevle - Typha latifolia</a><br>
+    <a href="http://efferus.no/Lathyrus latifolius.html">Bredflatbelg - Lathyrus latifolius</a><br>
+    <a href="http://efferus.no/Urtica dioica.html">Brennesle - Urtica dioica</a><br>
+    <a href="http://efferus.no/Rubus idaeus.html">Bringebær - Rubus idaeus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Nasturtium officinale.html">Brønnkarse - Nasturtium officinale</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Lycium barbarum.html">Bukketorn - Lycium barbarum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Artemisia vulgaris.html">Burot - Artemisia vulgaris</a><br >
+    <a href="http://efferus.no/Lespedeza bicolor.html">Buskkløver - Lespedeza bicolor</a><br >
+    <a href="http://efferus.no/Crambe cordifolia.html">Buskstrandkål - Crambe cordifolia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Amelanchier canadensis.html">Bærmispel (DK) - Amelanchier canadensis</a><br >
+    <a href="http://efferus.no/Gaultheria mucronata.html">Bærmyrt - Gaultheria mucronata</a><br>
+    <a href="http://efferus.no/Fagus sylvatica.html">Bøk - Fagus sylvatica</a><br >
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">C</h3>
+    <a href="http://efferus.no/Sanguinaria canadensis.html">Canadablodurt - Sanguinaria canadensis</a><br >
+    <a href="http://efferus.no/Shepherdia canadensis.html">Canadisk bøffelbær - Shepherdia canadensis </a><br >
+    <a href="http://efferus.no/Cercis canadensis.html">Canadisk judastre - Cercis canadensis</a><br >
+    <a href="http://efferus.no/Castanea pumila.html">Chinquapin - Castanea pumila</a><br>
+
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">D</h3>
+    <a href="http://efferus.no/Diospyros lotus.html">Daddelplomme - Diospyros lotus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Hemerocallis minor.html">Daglilje - Hemerocallis minor, H. citrina, H. fulva, H. altissima, H. lilioasphodelus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Crataegus douglasii.html">Douglashagtorn - Crataegus douglasii</a><br>
+    <a href="http://efferus.no/Vitis riparia.html">Drue - Vitis riparia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Prunus tenella.html">Dvergmandel - Prunus tenella</a><br >
+    <a href="http://efferus.no/Lamium album.html">Døvnesle - Lamium album</a><br>
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">E</h3>
+    <a href="http://efferus.no/Castanea sativa.html">Edelkastanje - Castanea sativa</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Sorbus domestica.html">Edelrogn - Sorbus domestica</a><br>
+    <a href="http://efferus.no/Juniperus communis.html">Einer - Juniperus communis</a><br>
+    <a href="http://efferus.no/Allium ampeloprasum ampeloprasum.html">Elefanthvitløk - Allium ampeloprasum var. ampeloprasum</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Cardamine pratensis.html">Engkarse - Cardamine pratensis</a><br>
+    <a href="http://efferus.no/Silene vulgaris.html">Engsmelle - Silene vulgaris</a><br>
+    <a href="http://efferus.no/Rumex acetosa (var Rumex Schavel).html">Engsyre - Rumex acetosa (var Rumex Schavel)</a><br >
+    <a href="http://efferus.no/Epilobium angustifolium.html">Enmørkje - Epilobium angustifolium</a><br>
+    <a href="http://efferus.no/Malus domestica.html">Eple - Malus domestica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Mentha suaveolens.html">Eplemynte - Mentha suaveolens</a><br >
+    <a href="http://efferus.no/Rosa rubiginosa.html">Eplerose - Rosa rubiginosa</a><br>
+    <a href="http://efferus.no/Artemisia dracunculus.html">Estragon, fransk  - Artemisia dracunculus</a><br>
+    <a href="http://efferus.no/Artemisia dracunculoides.html">Estragon, russisk  - Artemisia dracunculoides</a><br>
+    <a href="http://efferus.no/Monarda didyma.html">Etasjeblom (Hestemynte) - Monarda didyma</a><br>
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">F</h3>
+    <a href="http://efferus.no/Duchesnea indica.html">Falsk jordbær - Duchesnea indica</a><br>
+    <a href="http://efferus.no/Aralia elata.html">Fandens spaserstokk - Aralia elata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Decaisnea fargesii.html">Fargeblåskolm - Decaisnea fargesii</a><br>
+    <a href="http://efferus.no/Genista tinctoria.html">Fargeginst  -  Genista tinctoria</a><br>
+
+    <a href="http://efferus.no/Akebia quinata.html">Fembladakebie - Akebia quinata</a><br>
+    <a href="http://efferus.no/Foeniculum vulgare.html">Fennikel - Foeniculum vulgare </a><br>
+    <a href="http://efferus.no/Ficus carica.html">Fiken - Ficus carica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /> <br>
+    <a href="http://efferus.no/Pycnanthemum pilosum.html">Fjellmynte - Pycnanthemum pilosum</a><br>
+    <a href="http://efferus.no/Oxyria digyna.html">Fjellsyre - Oxyria digyna</a><br>
+    <a href="http://efferus.no/Triticum aestivum x Thinopyrum intermedium.html">Flerårig hvete - Triticum aestivum x Thinopyrum intermedium</a><br>
+    <a href="http://efferus.no/Secale montanum.html">Flerårig rug - Secale montanum</a><br>
+    <a href="http://efferus.no/Artemisia dracunculus.html">Fransk estragon - Artemisia dracunculus</a><br>
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">G</h3>
+    <a href="http://efferus.no/Allium oleraceum.html">Geirlauk - Allium oleraceum</a><br>
+    <a href="http://efferus.no/Epilobium angustifolium.html">Geitrams - Epilobium angustifolium</a><br>
+    <a href="http://efferus.no/Pimpinella saxifraga.html">Gjeldkarve - Pimpinella saxifraga</a><br>
+    <a href="http://efferus.no/Oxalis acetosella.html">Gjøksyre - Oxalis acetosella</a><br>
+    <a href="http://efferus.no/Origanum vulgare.html">Gresk oregano - Origanum vulgare hirtum</a>  <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br >
+    <a href="http://efferus.no/Allium schoenoprasum.html">Gressløk - Allium schoenoprasum</a><br>
+    <a href="http://efferus.no/Stellaria graminea.html">Gresstjerneblom - Stellaria graminea</a><br>
+    <a href="http://efferus.no/Actinidia arguta.html">Grønnkattebusk - Actinidia arguta</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br> 
+    <a href="http://efferus.no/Mentha spicata.html">Grønnmynte - Mentha spicata</a><br >
+    <a href="http://efferus.no/Alnus viridis.html">Grønnor - Alnus viridis</a><br>
+    <a href="http://efferus.no/Mentha longifolia.html">Gråmynte - Mentha longifolia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Alnus incana.html">Gråor - Alnus incana</a><br>
+    <a href="http://efferus.no/Xanthoceras sorbifolium.html">Gulhorn - Xanthoceras sorbifolium</a><br>
+    <a href="http://efferus.no/Allium moly.html">Gulløk - Allium moly</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Ribes odoratum.html">Gullrips - Ribes odoratum</a><br>
+    <a href="http://efferus.no/Solidago virgaurea.html">Gullris - Solidago virgaurea</a><br>
+    <a href="http://efferus.no/Ulex europaeus.html">Gulltorn - Ulex europaeus</a><br >
+    <a href="http://efferus.no/Galium verum.html">Gulmaure - Galium verum</a><br>
+    <a href="http://efferus.no/Gentiana lutea.html">Gulsøte - Gentiana lutea</a><br>
+    <a href="http://efferus.no/Elaeagnus multiflora.html">Gumi - Elaeagnus multiflora</a><br >
+    <a href="http://efferus.no/Cytisus scoparius.html">Gyvel - Cytisus scoparius</a><br >
+    <a href="http://efferus.no/Potentilla anserina.html">Gåsemure - Potentilla anserina</a><br>
+
+
+      <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">H</h3>
+      <a href="http://efferus.no/Vaccinium corymbosum.html">Hageblåbær, Nord-amerikanske blåbær - Vaccinium corymbosum <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /></a><br>
+      <a href="http://efferus.no/Fragaria spp.html">Hagejordbær - Fragaria x ananassa</a><br>
+      <a href="http://efferus.no/Rheum x cultorum.html">Hagerabarbara - Rheum x cultorum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Thymus vulgaris.html">Hagetimian - Thymus vulgaris</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Crataegus douglasii.html">Hagtorn - Crataegus douglasii</a><br>
+      <a href="http://efferus.no/Crataegus durobrivensis.html">Hagtorn - Crataegus durobrivens</a><br >
+      <a href="http://efferus.no/Crataegus ellwangeriana.html">Hagtorn - Crataegus ellwangeriana</a><br >
+      <a href="http://efferus.no/Crataegus monogyana.html">Hagtorn - Crataegus monogyna</a><br >
+      <a href="http://efferus.no/Crataegus tanacetifolia.html">Hagtorn - Crataegus tanacetifolia</a><br>
+      <a href="http://efferus.no/Sonchus oleraceus.html">Haredylle - Sonchus oleraceus</a><br>
+      <a href="http://efferus.no/Polygonum viviparum.html">Harerug - Polygonum viviparum</a><br>
+      <a href="http://efferus.no/Corylus avellana.html">Hassel - Corylus avellana</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Amelanchier alnifolia.html">Heggmispel - Amelanchier alnifolia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Betula pendula.html">Hengebjørk - Betula pendula</a><br >
+      <a href="http://efferus.no/Carya laciniosa.html">Hickory (Shellbark hickory) - Carya laciniosa</a><br >
+      <a href="http://efferus.no/Rheum australe.html">Himalaya rabarbara - Rheum australe</a><br >
+      <a href="http://efferus.no/Allium wallichii.html">Himalayaløk - Allium wallichii</a><br>
+      <a href="http://efferus.no/Juglans ailanthifolia cordiformis.html">Hjertenøtt - Juglans ailanthifolia cordiformis</a><br>
+      <a href="http://efferus.no/Rhus typhina.html">Hjortesumak - Rhus typhina</a><br>
+      <a href="http://efferus.no/Lonicera caerulea.html">Honningbær - Lonicera caerulea</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Hosta crispula.html">Hosta - Hosta crispula, Hosta sieboldiana, Hosta montana, Hosta sieboldii, Hosta longipes</a><br>
+      <a href="http://efferus.no/Humulus lupulus.html">Humle - Humulus lupulus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Trifolium repens.html">Hvitkløver - Trifolium repens</a>  <br>
+      <a href="http://efferus.no/Allium sativum.html">Hvitløk - Allium sativum </a><img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Morus alba.html">Hvitmorbær - Morus alba</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Hydrastis canadensis.html">Hydrastinurt - Hydrastis canadensis</a><br>
+      <a href="http://efferus.no/Aralia elata.html">Høstaralia - Aralia elata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      
+      <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">I</h3>
+      <a href="http://efferus.no/Apios americana.html">Indianerpotet - Apios americana</a><br>
+      <a href="http://efferus.no/Mentha spicata.html">Ingefærmynte - Mentha x gentilis 'Variegata', Mentha x gracilis</a><br >
+      <a href="http://efferus.no/Hyssopus officinalis.html">Isop - Hyssopus officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Alnus cordata.html">Italiensk or - Alnus cordata</a><br >
+      
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">J</h3>
+      <a href="http://efferus.no/Celastrus orbiculatus.html">Japanfrøbusk - Celastrus orbiculatus</a><br >
+    <a href="http://efferus.no/Cornus officinalis.html">Japankornell - Cornus officinalis</a><br >
+    <a href="http://efferus.no/Petasites japonicus.html">Japanpestrot - Petasites japonicus</a><br>
+    <a href="http://efferus.no/Fallopia japonica.html">Japanslirekne - Fallopia japonica</a><br>
+    <a href="http://efferus.no/Castanea crenata.html">Japansk kastanje - Castanea crenata</a><br>
+    <a href="http://efferus.no/Cryptotaenia japonica.html">Japansk persille - Cryptotaenia japonica</a><br>
+    <a href="http://efferus.no/Hovenia dulcis.html">Japansk rosintre - Hovenia dulcis</a><br >
+    <a href="http://efferus.no/Elaeagnus umbellata.html">Japansk sølvbusk - Elaeagnus umbellata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br >
+    <a href="http://efferus.no/Elaeagnus pungens.html">Japansk sølvtorn - Elaeagnus pungens</a><br >
+    <a href="http://efferus.no/Juglans sieboldiana.html">Japansk valnøtt - Juglans sieboldiana</a><br >
+      <a href="http://efferus.no/Dioscorea japonica.html">Japansk yam - Dioscorea japonica</a><br>
+    <a href="http://efferus.no/Physalis alkekengi.html">Japanske lykter - Physalis alkekengi</a><br >
+      <a href="http://efferus.no/Fragaria spp.html">Jordbær - Fragaria spp.</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Lathyrus tuberosus.html">Jordflatbelg - Lathyrus tuberosus</a><br>
+      <a href="http://efferus.no/Helianthus tuberosus.html">Jordskokk - Helianthus tuberosus</a><br>
+      <a href="http://efferus.no/Ribes x culverwellii.html">Jostabær - Ribes x culverwellii</a><br>
+    <a href="http://efferus.no/Lupinus perennis.html">Jærlupin - Lupinus perennis</a><br >
+      
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">K</h3>
+    <a href="http://efferus.no/Diospyros kaki.html">Kaki - Diospyros kaki</a><br >
+    <a href="http://efferus.no/Matricaria chamomilla.html">Kamille - Matricaria chamomilla</a><br >
+    <a href="http://efferus.no/Amelanchier lamarckii.html">Kanadablåhegg - Amelanchier lamarckii</a><br >
+    <a href="http://efferus.no/Polygonatum odoratum.html">Kantkonvall - Polygonatum odoratum</a><br >
+    <a href="http://efferus.no/Allium senescens.html">Kantløk - Allium senescens</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Cynara cardunculus.html">Kardon (Vill artisjokk) - Cynara cardunculus</a><br >
+    <a href="http://efferus.no/Carum carvi.html">Karve - Carum carvi</a><br>
+    <a href="http://efferus.no/Nepeta cataria.html">Kattemynte - Nepeta cataria</a><br>
+    <a href="http://efferus.no/Phytolacca americana.html">Kermesbær - Phytolacca americana</a><br >
+    <a href="http://efferus.no/Lycium chinensis.html">Kinabukketorn  - Lycium chinensis</a><br>
+    <a href="http://efferus.no/Allium tuberosum.html">Kinagressløk - Allium tuberosum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Ziziphus jujuba.html">Kinajujube - Ziziphus jujuba</a><br >
+    <a href="http://efferus.no/Stachys affinis.html">Kinaskokk - Stachys affinis</a><br>
+    <a href="http://efferus.no/Koelreuteria paniculata.html">Kinesertre - Koelreuteria paniculata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/crataegus pinnatifida.html">Kinesisk hagtorn - Crataegus pinnatifida major</a><br>
+      <a href="http://efferus.no/Prunus tomentosa.html">Kinesisk kirsebær - Prunus tomentosa</a><br>
+    <a href="http://efferus.no/Chaenomeles cathayensis.html">Kinesisk ildkvede - Chaenomeles cathayensis</a><br >
+    <a href="http://efferus.no/Toona sinensis.html">Kinesisk toona - Toona sinensis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Dioscorea batatas.html"> Kinesisk yam - Dioscorea batatas</a><br>
+      <a href="http://efferus.no/Prunus cerasus.html">Kirsebær - Prunus cerasus</a><br>
+    <a href="http://efferus.no/Prunus cerasifera.html">Kirsebærplomme - Prunus cerasifera</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Actinidia deliciosa.html">Kiwi - Actinidia deliciosa</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Oenothera biennis.html">Kjempenattlys - Oenothera biennis</a><br>
+    <a href="http://efferus.no/Fallopia sachalinensis.html">Kjempeslirekne - Fallopia sachalinensis</a><br>
+    <a href="http://efferus.no/Smilacina racemosa.html">Klasefjør - Smilacina racemosa</a><br >
+    <a href="http://efferus.no/Tiarella cordifolia.html">Klaseskumblomst - Tiarella cordifolia</a><br >
+    <a href="http://efferus.no/Parthenocissus quinquefolia.html">Klatrevillvin - Parthenocissus quinquefolia</a><br >
+    <a href="http://efferus.no/Bunium bulbocastanum.html">Knollkarve - Bunium bulbocastanum</a><br>
+    <a href="http://efferus.no/Asphodeline lutea.html">Kongspryd - Asphodeline lutea</a><br>
+    <a href="http://efferus.no/Rhus glabra.html">Korallsumak - Rhus glabra</a><br >
+    <a href="http://efferus.no/Aster scaber.html">Korea asters - Aster scaber</a><br >
+    <a href="http://efferus.no/Cornus kousa chinensis.html">Koreakornell - Cornus kousa chinensis</a><br >
+    <a href="http://efferus.no/Glechoma hederacea.html">Korsknapp - Glechoma hederacea</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Gleditsia triacanthos.html">Korstorn - Gleditsia triacanthos</a><br >
+    <a href="http://efferus.no/Viburnum opulus.html">Korsved - Viburnum opulus</a><br >
+    <a href="http://efferus.no/Empetrum nigrum.html">Krekling (Krøkebær) - Empetrum nigrum</a><br>
+    <a href="http://efferus.no/Calycanthus floridus.html">Krydderbusk - Calycanthus floridus</a><br >
+    <a href="http://efferus.no/Gaultheria procumbens.html">Krypberglyng - Gaultheria procumbens</a><br >
+    <a href="http://efferus.no/Mahonia repens.html">Krypmahonia - Mahonia repens</a><br >
+    <a href="http://efferus.no/Thymus serpyllum.html">Kryptimian - Thymus serpyllum</a><br >
+    <a href="http://efferus.no/Allium sphaerocephalon.html">Kuleløk - Allium sphaerocephalon</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Primula denticulata.html">Kuleprimula - Primula denticulata</a><br >
+    <a href="http://efferus.no/Angelica archangelica.html">Kvann - Angelica archangelica</a><br >
+    <a href="http://efferus.no/Cydonia oblonga.html">Kvede - Cydonia oblonga</a><br>
+    <a href="http://efferus.no/Heracleum sphondylium.html">Kystbjørnekjeks - Heracleum sphondylium</a><br>
+    <a href="http://efferus.no/Chrysosplenium oppositifolium.html">Kystmaigull - Chrysosplenium oppositifolium</a><br >
+    
+      <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">L</h3>
+      <a href="http://efferus.no/Astragalus glycyphyllos.html">Lakrismjelt - Astragalus glycyphyllos</a><br >
+      <a href="http://efferus.no/Glycyrrhiza glabra.html">Lakrisrot - Glycyrrhiza glabra</a><br >
+      <a href="http://efferus.no/Lavandula angustifolia.html">Lavendel - Lavandula angustifolia</a><br >
+      <a href="http://efferus.no/Rheum officinale.html">Legerabarbara - Rheum officinale</a><br>
+      <a href="http://efferus.no/Althaea officinalis.html">Legestokkrose - Althaea officinalis</a><br >
+      <a href="http://efferus.no/Valeriana officinalis.html">Legevendelrot - Valeriana officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Rhus aromatica.html">Lemonadesumak - Rhus aromatica</a><br>
+    <a href="http://efferus.no/Tilia cordata.html">Lind - Tilia cordata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Trapa bicornis.html">Ling - Trapa bicornis</a><br>
+    <a href="http://efferus.no/Calamintha nepeta.html">Liten kalamint / Oljemynte - Calamintha nepeta</a><br >
+    <a href="http://efferus.no/Allium x proliferum.html">Luftløk - Allium x proliferum</a><br>
+    <a href="http://efferus.no/Pulmonaria officinale.html">Lungeurt - Pulmonaria officinalis</a><br >
+    <a href="http://efferus.no/Alliaria petiolata.html">Løkurt - Alliaria petiolata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Levisticum officinale.html">Løpstikke - Levisticum officinale</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Taraxacum officinale.html">Løvetann - Taraxacum officinale</a><br>
+    
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">M</h3>
+    <a href="http://efferus.no/Mahonia aquifolium.html">Mahonia - Mahonia aquifolium</a><br>
+    <a href="http://efferus.no/Artemisia absinthium.html">Malurt - Artemisia absinthium</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Sequoiadendron giganteum.html">Mammuttre, Kjempesequoiatre - Sequoiadendron giganteum</a><br>
+    <a href="http://efferus.no/Fragaria vesca.html">Markjordbær - Fragaria vesca</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Viola odorata.html">Marsfiol - Viola odorata</a><br>
+    <a href="http://efferus.no/Lilium martagon.html">Martagonlilje - Lilium martagon</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Mespilus germanica.html">Matmispel - Mespilus germanica</a><br>
+    <a href="http://efferus.no/Tanacetum parthenium.html">Matrem - Tanacetum parthenium</a><br>
+    <a href="http://efferus.no/Helianthus maximiliani.html">Maximiliani solsikke - Helianthus maximiliani</a><br>
+    <a href="http://efferus.no/Arctostaphylos uva-ursi.html">Melbær - Arctostaphylos uva-ursi</a><br>
+    <a href="http://efferus.no/Campanula lactiflora.html">Melkeklokke - Campanula lactiflora</a><br>
+    Minikiwi - <a href="http://efferus.no/Actinidia arguta.html">Grønnkattebusk - Actinidia arguta</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br> 
+      &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Actinidia kolomikta.html">Rødkattebusk - Actinidia kolomikta</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Actinidia polygama.html">Sølvkattebusk - Actinidia polygama</a><br>
+    <a href="http://efferus.no/Cryptotaenia japonica.html">Mitsuba - Cryptotaenia japonica</a><br>
+    <a href="http://efferus.no/Filipendula ulmaria.html">Mjødurt - Filipendula ulmaria</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Rubus chamaemorus.html">Molte - Rubus chamaemorus</a><br>
+    <a href="http://efferus.no/Prunus avium.html">Morell - Prunus avium</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Fragaria spp.html">Moskusjordbær - Fragaria moschata</a><br>
+    <a href="http://efferus.no/Malva moschata.html">Moskuskattost - Malva moschata</a><br>
+    Mynte - &nbsp; <a href="http://efferus.no/Mentha aquatica.html">Mentha aquatica - Vassmynte</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br > 
+      &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Mentha longifolia.html">Mentha longifolia - Gråmynte</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Mentha x piperita.html">Mentha x piperita - Peppermynte</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br> 
+      &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Mentha pulegium.html">Mentha pulegium - Poleimynte</a><br>
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Mentha spicata.html">Mentha spicata - Grønnmynte</a><br >
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;<a href="http://efferus.no/Mentha suaveolens.html">Mentha suaveolens - Eplemynte</a><br >
+    <a href="http://efferus.no/Asperula odorata.html">Myske - Asperula odorata</a><br>
+    <a href="http://efferus.no/Fragaria vesca.html">Månedsjordbær - Fragaria vesca</a><br>
+
+    
+      <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">N</h3>
+      <a href="http://efferus.no/Gunnera tinctoria.html">Nalca - Gunnera tinctoria</a><br>
+      <a href="http://efferus.no/Allium neapolitanum.html">Neapelløk - Allium neapolitanum</a><br>
+      <a href="http://efferus.no/Zanthoxylum alatum.html">Nepal pepper - Zanthoxylum alatum</a><br>
+      <a href="http://efferus.no/Campanula trachelium.html">Nesleklokke - Campanula trachelium</a><br>
+    <a href="http://efferus.no/Allium nutans.html">Nikkeløk - Allium nutans</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Apium nodiflorum.html">Nikkeselleri - Helosciadium nodiflorum, Apium nodiflorum</a><br>
+    <a href="http://efferus.no/Allium nutans.html">Norrlandsløk - Allium nutans x senescens x ?</a><br>
+    
+    
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">O</h3>
+    <a href="http://efferus.no/Mahonia nervosa.html">Oregon drue - Mahonia nervosa</a><br>
+    <a href="http://efferus.no/Persicaria bistorta.html">Ormerot - Persicaria bistorta</a><br>
+    
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">P</h3>
+    <a href="http://efferus.no/Gunnera tinctoria.html">Pangue - Gunnera tinctoria</a><br>
+      <a href="http://efferus.no/Crataegus oxyacantha.html">Parkhagtorn - Crataegus oxyacantha</a><br >
+      <a href="http://efferus.no/Fallopia japonica.html">Parkslirekne - Fallopia japonica</a><br>
+      <a href="http://efferus.no/Passiflora incarnata.html">Pasjonsblomst - Passiflora incarnata</a><br>
+      <a href="http://efferus.no/Asimina triloba.html">Pawpaw/Amerikansk Papaya - Asimina triloba</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Carya illinoinensis.html">Pecannøtt - Carya illinoinensis</a><br>
+      <a href="http://efferus.no/Mentha x piperita.html">Peppermynte - Mentha x piperita</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Armoracia rusticana.html">Pepperrot - Armoracia rusticana</a><br>
+      <a href="http://efferus.no/Datura stramonium.html">Piggeple - Datura stramonium</a><br>
+      <a href="http://efferus.no/Sanguisorba minor.html">Pimpernell - Sanguisorba minor</a><br>
+      <a href="http://efferus.no/Allium fistulosum.html">Pipeløk - Allium fistulosum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Prunus domestica.html">Plomme - Prunus domestica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Mentha pulegium.html">Poleimynte - Mentha pulegium</a><br>
+      <a href="http://efferus.no/Myrica gale.html">Pors - Myrica gale</a><br>
+      <a href="http://efferus.no/Solanum tuberosum.html">Potet - Solanum tuberosum</a><br>
+      <a href="http://efferus.no/Allium cepa aggregatum.html">Potetløk - Allium cepa aggregatum</a><br>
+      <a href="http://efferus.no/Allium cernuum.html">Prairieløk - Allium cernuum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Hypericum perforatum.html">Prikkperikum - Hypericum perforatum</a><br>
+      <a href="http://efferus.no/Rheum palmatum.html">Prydrabarbara - Rheum palmatum</a><br>
+      <a href="http://efferus.no/Echinacea purpurea.html">Purpursolhatt - Echinacea purpurea</a><br>
+      <a href="http://efferus.no/Aronia prunifolia.html">Purpursurbær - Aronia x prunifolia</a><br>
+      <a href="http://efferus.no/Pyrus communis.html">Pære - Pyrus communis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">R</h3>
+    Rabarbara - <a href="http://efferus.no/Rheum australe.html">Rheum australe - Himalaya rabarbara</a><br > 
+      &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; <a href="http://efferus.no/Rheum officinale.html">Rheum officinale - Legerabarbara</a><br>
+        &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; <a href="http://efferus.no/Rheum palmatum.html">Rheum palmatum - Prydrabarbara</a><br> 
+      &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; <a href="http://efferus.no/Rheum x cultorum.html">Rheum x cultorum - Hagerabarbara</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Allium chinense.html">Rakkyo - Allium chinense</a><br>
+    <a href="http://efferus.no/Allium tricoccum.html">Ramps - Allium tricoccum</a><br>
+    <a href="http://efferus.no/Allium ursinum.html">Ramsløk - Allium ursinum</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Tanacetum vulgare.html">Reinfann - Tanacetum vulgare</a><br>
+    <a href="http://efferus.no/Calendula officinalis.html">Ringblomst - Calendula officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Ribes rubrum.html">Rips - Ribes rubrum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br>
+    <a href="http://efferus.no/Sorbus aucuparia.html">Rogn - Sorbus aucuparia</a><br>
+    <a href="http://efferus.no/Chamaemelum nobile.html">Romersk kamille - Chamaemelum nobile</a><br >
+    <a href="http://efferus.no/Prunus serotina.html">Romhegg - Prunus serotina</a><br >
+    <a href="http://efferus.no/Malva alcea.html">Rosekattost - Malva alcea</a><br >
+    <a href="http://efferus.no/Rhodiola rosea.html">Rosenrot - Rhodiola rosea</a><br >
+    <a href="http://efferus.no/Bunias orientalis.html">Russekål - Bunias orientalis</a><br>
+    <a href="http://efferus.no/Artemisia dracunculoides.html">Russisk estragon - Artemisia dracunculoides</a><br>
+    <a href="http://efferus.no/Nelumbo nucifera 'komarovii'.html">Russisk lotus - Nelumbo nucifera 'komarovii'</a><br>
+    <a href="http://efferus.no/Morus alba tatarica.html">Russisk morbær - Morus alba tatarica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Eleutherococcus senticosus.html">Russisk rot - Eleutherococcus senticosus</a><br >
+    <a href="http://efferus.no/Elaeagnus angustifolia.html">Russisk sølvbusk - Elaeagnus angustifolia</a><br >
+    <a href="http://efferus.no/Achillea millefolium.html">Ryllik - Achillea millefolium</a><br >
+    <a href="http://efferus.no/Rosa rugosa.html">Rynkerose - Rosa rugosa</a><br>
+    <a href="http://efferus.no/Centranthus ruber.html">Rød sporblom - Centranthus ruber</a><br >
+        <a href="http://efferus.no/Sambucus racemosa.html">Rødhyll - Sambucus racemosa</a><br>
+    <a href="http://efferus.no/Actinidia kolomikta.html">Rødkattebusk - Actinidia kolomikta</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Trifolium pratense.html">Rødkløver -  Trifolium pratense</a>   <br>
+    <a href="http://efferus.no/Acer rubrum.html">Rødlønn - Acer rubrum</a><br >
+    <a href="http://efferus.no/Morus rubra.html">Rødmorbær - Morus rubra</a><br >
+    <a href="http://efferus.no/Alnus rubra.html">Rødor - Alnus rubra</a><br >
+    <a href="http://efferus.no/Aronia arbutifolia.html">Rødsurbær - Aronia arbutifolia</a><br>
+    <a href="http://efferus.no/Calluna vulgaris.html">Røsslyng - Calluna vulgaris</a><br >
+    <a href="http://efferus.no/Parthenocissus tricuspidata.html">Rådhusvillvin - Parthenocissus tricuspidata</a><br >
+    
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">S</h3>
+    <a href="http://efferus.no/Gaultheria shallon.html">Salalbær - Gaultheria shallon</a><br >
+    <a href="http://efferus.no/Salvia officinalis.html">Salvie - Salvia officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Pyrus pyrifolia.html">Sandpære - Pyrus pyrifolia</a><br>
+    <a href="http://efferus.no/Crithmum maritimum.html">Sanktpeterskjerm - Crithmum maritimum</a><br>
+    <a href="http://efferus.no/Sassafras albidum.html">Sassafras - Sassafras albidum</a><br>
+    <a href="http://efferus.no/Schisandra chinensis.html">Schisandra - Schisandra chinensis </a><br >
+    <a href="http://efferus.no/Allium victorialis.html">Seiersløk - Allium victorialis</a><br >
+    <a href="http://efferus.no/Pinus cembra.html">Sembrafuru - Pinus cembra</a><br>
+    <a href="http://efferus.no/Caragana arborescens.html">Sibirertebusk - Caragana arborescens</a><br >
+    <a href="http://efferus.no/Pinus sibirica.html">Sibirfuru - Pinus sibirica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Claytonia sibirica.html">Sibirportulakk - Claytonia sibirica</a><br >
+    <a href="http://efferus.no/Ulmus pumila.html">Sibirsk alm - Ulmus pumila</a><br>
+    <a href="http://efferus.no/Pinus pumila.html">Sibirsk dvergfuru - Pinus pumila</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Allium schoenoprasum sibiricum.html">Sibirsk gressløk - Allium schoenoprasum sibiricum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Pinus sibirica.html">Sibirsk sembrafuru - Pinus cembra sibirica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Cichorium intybus.html"> Sikori - Cichorium intybus</a><br > 
+    <a href="http://efferus.no/Asclepias.html">Silkeurter - Asclepias</a><br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Asclepias incarnata<br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Asclepias syriaca<br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Asclepias speciosa<br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Asclepias tuberosa<br>
+      <a href="http://efferus.no/Polypodium vulgare.html">Sisselrot - Polypodium vulgare</a><br>
+    <a href="http://efferus.no/Alnus sinuata.html">Sitka or - Alnus sinuata</a><br >
+    <a href="http://efferus.no/Melissa officinalis.html">Sitronmelisse - Melissa officinalis</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Monarda citriodora.html">Sitronetasjeblom - Monarda citriodora</a><br >
+    <a href="http://efferus.no/Allium cepa aggregatum.html">Sjallotløk - Allium cepa aggregatum</a><br>
+    <a href="http://efferus.no/Scirpus lacustris.html">Sjøsivaks - Scirpus lacustris</a><br>
+        <a href="http://efferus.no/Carya ovata.html">Skihickory - Carya ovata</a><br >
+    <a href="http://efferus.no/Lathyrus sylvestris.html">Skogflatbelg - Lathyrus sylvestris</a><br>
+    <a href="http://efferus.no/Rumex sanguineus.html">Skoghøymole - Rumex sanguineus ssp. sanguineus</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Scorzonera hispanica.html">Skorsonnerrot - Scorzonera hispanica</a><br>
+    <a href="http://efferus.no/Aegopodium podagraria.html">Skvallerkål - Aegopodium podagraria</a><br>
+    <a href="http://efferus.no/Allium sativum.html">Slangeløk - Allium sativum var. ophioscorodon</a><br>
+      <a href="http://efferus.no/Angelica sylvestris.html">Sløke - Angelica sylvestris</a><br>
+    <a href="http://efferus.no/Prunus insititia.html">Slåpelomme - Prunus insititia</a><br>
+    <a href="http://efferus.no/Prunus spinosa.html">Slåpetorn - Prunus spinosa</a><br>
+    <a href="http://efferus.no/Typha angustifolia.html">Smal dunjkevle - Typha angustifolia</a><br>
+    <a href="http://efferus.no/Echinacea angustifolia.html">Smalbladet solhatt - Echinacea angustifolia</a><br>
+    <a href="http://efferus.no/Plantago lanceolata.html">Smalkjempe - Plantago lanceolata</a><br >
+    <a href="http://efferus.no/Sedum telephium.html">Smørbukk - Sedum telephium</a><br >
+    <a href="http://efferus.no/Juglans cinerea.html">Smørvalnøtt - Juglans cinerea</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br>
+    <a href="http://efferus.no/Chaenomeles japonica.html">Småildkvede - Chaenomeles japonica</a><br >
+    <a href="http://efferus.no/Urtica dioica.html">Smånesle - Urtica urens</a><br>
+    <a href="http://efferus.no/Halesia carolina.html">Snøklokkebusk - Halesia carolina</a><br >
+    <a href="http://efferus.no/Arnica montana.html">Solblom - Arnica montana</a><br>
+        <a href="http://efferus.no/Ribes nigrum.html">Solbær - Ribes nigrum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br>
+        <a href="http://efferus.no/Quercus robur.html">Sommereik - Quercus robur</a><br>
+    <a href="http://efferus.no/Smyrnium olusatrum.html"> Sort løpstikke - Smyrnium olusatrum</a><br >
+    <a href="http://efferus.no/Myrrhis odorata.html">Spansk kjørvel - Myrrhis odorata</a><br>
+    <a href="http://efferus.no/Triticum aestivum x Thinopyrum intermedium.html">Staudehvete - Triticum aestivum x Thinopyrum intermedium</a><br>
+    <a href="http://efferus.no/Secale montanum.html">Stauderug - Secale montanum</a><br>
+    <a href="http://efferus.no/Quercus ilex.html">Steineik - Quercus ilex</a><br>
+    <a href="http://efferus.no/Diplotaxis tenuifolia.html">Steinsennep - Diplotaxis tenuifolia</a><br>
+    <a href="http://efferus.no/Ribes uva-crispa.html">Stikkelsbær - Ribes uva-crispa</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" width="12" height="12" /><br>
+    <a href="http://efferus.no/Sonchus oleraceus.html">Stivdylle - Sonchus asper</a><br>
+    <a href="http://efferus.no/Camassia quamash.html">Stjernehyasint - Camassia quamash</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Hablitzia tamnoides.html">Stjernemelde - Hablitzia tamnoides</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Chenopodium bonus-henricus.html">Stolthenrikmelde - Chenopodium bonus-henricus</a><br >
+    <a href="http://efferus.no/Arctium lappa.html">Storborre - Arctium lappa</a><br>
+    <a href="http://efferus.no/Corylus maxima.html">Storhassel - Corylus maxima</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+      <a href="http://efferus.no/Chaenomeles speciosa.html">Storildkvede - Chaenomeles speciosa</a><br>
+    <a href="http://efferus.no/Campanula latifolia.html">Storklokke - Campanula latifolia</a><br >
+      <a href="http://efferus.no/Polygonatum multiflorum.html">Storkonvall - Polygonatum multiflorum</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Tilia platyphyllos.html"> Storlind - Tilia platyphyllos</a><br >
+    <a href="http://efferus.no/Alchemilla mollis.html">Stormarikåpe - Alchemilla mollis</a><br >
+    <a href="http://efferus.no/Urtica dioica.html">Stornesle - Urtica dioica</a><br>
+    <a href="http://efferus.no/Robinia pseudoacacia.html">Storrobinia - Robinia pseudoacacia</a><br >
+    <a href="http://efferus.no/Crambe maritima.html">Strandkål - Crambe maritima</a><br>
+    <a href="http://efferus.no/Aster tripolium.html"> Strandstjerne - Aster tripolium, Tripolium pannonicum </a><br>
+    <a href="http://efferus.no/Matteuccia struthiopteris.html">Strutseving - Matteuccia struthiopteris</a><br>
+    <a href="http://efferus.no/Acer saccharum.html">Sukkerlønn - Acer saccharum</a><br >
+      <a href="http://efferus.no/Sium sisarum.html">Sukkerrot - Sium sisarum</a><br>
+      <a href="http://efferus.no/Sonchus oleraceus.html">Sumpdylle - Sonchus palustris</a><br>
+    <a href="http://efferus.no/Rubus occidentalis.html">Svartbringebær - Rubus occidentalis</a><br>
+    <a href="http://efferus.no/Sambucus nigra.html">Svarthyll - Sambucus nigra</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Morus nigra.html">Svartmorbær - Morus nigra</a><br >
+      <a href="http://efferus.no/Alnus glutinosa.html">Svartor - Alnus glutinosa</a><br >
+        <a href="http://efferus.no/Scorzonera hispanica.html">Svartrot - Scorzonera hispanica</a><br>
+      <a href="http://efferus.no/Ribes divaricatum.html">Svartstikkelsbær - Ribes divaricatum</a><br>
+      <a href="http://efferus.no/Aronia melanocarpa.html">Svartsurbær - Aronia melanocarpa</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+        <a href="http://efferus.no/Juglans nigra.html">Svartvalnøtt - Juglans nigra</a><br>
+        <a href="http://efferus.no/Crataegus tanacetifolia.html">Syrisk hagtorn - Crataegus tanacetifolia</a><br>
+      <a href="http://efferus.no/Zanthoxylum schinifolium.html">Szechuan pepper - Zanthoxylum schinifolium</a><br >
+      <a href="http://efferus.no/Shepherdia argentea.html">Sølvbøffelbær - Shepherdia argentea</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Actinidia polygama.html">Sølvkattebusk - Actinidia polygama</a><br>
+      <a href="http://efferus.no/Tilia tomentosa.html">Sølvlind - Tilia tomentosa</a><br >
+      <a href="http://efferus.no/Sium sisarum.html">Søtkjeks - Sium sisarum</a><br>
+      <a href="http://efferus.no/Saponaria officinalis.html">Såpeurt - Saponaria officinalis</a><br>
+      
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">T</h3>
+      <a href="http://efferus.no/Amelanchier alnifolia.html">Taggblåhegg - Amelanchier alnifolia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Phragmites australis.html">Takrør - Phragmites australis</a><br>
+    <a href="http://efferus.no/Sorbus torminalis.html">Tarmvriasal - Sorbus torminalis</a><br >
+    <a href="http://efferus.no/Ceanothus americanus.html">Taskeblom - Ceanothus americanus</a><br>
+    <a href="http://efferus.no/Crambe tatarica.html">Tatarisk strandkål - Crambe tatarica</a><br>
+    <a href="http://efferus.no/Ginkgo biloba.html">Tempeltre - Ginkgo biloba</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Hippophae rhamnoides.html">Tindved - Hippophae rhamnoides</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Lotus corniculatus.html">Tiriltunge - Lotus corniculatus</a> <br>
+    <a href="http://efferus.no/Aralia chinensis.html">Tornaralia - Aralia chinensis</a><br>
+    <a href="http://efferus.no/Vaccinium oxycoccos.html">Tranebær / Stortranebær - Vaccinium oxycoccos</a><br>
+    <a href="http://efferus.no/Viburnum trilobum.html">Tranebærkorsved - Viburnum trilobum</a><br>
+    <a href="http://efferus.no/Akebia trifoliata.html">Trebladakebie - Akebia trifoliata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Hamamelis virginiana.html">Trollhassel - Hamamelis virginiana</a><br>
+    <a href="http://efferus.no/Allium obliquum.html">Tvistebladløk -  Allium obliquum</a><br> 
+    <a href="http://efferus.no/Cicerbita alpina.html">Turt - Cicerbita alpina</a><br />
+
+    <a href="http://efferus.no/Vaccinium vitis-idaea.html">Tyttebær - Vaccinium vitis-idaea</a><br>
+    
+      <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">U</h3>
+      <a href="http://efferus.no/Aralia cordata.html">Udo - Aralia cordata</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Campanula rapunculoides.html">Ugressklokke - Campanula rapunculoides</a><br>
+    
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">V</h3>
+    <a href="http://efferus.no/Juglans regia.html">Valnøtt - Juglans regia</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Symphytum officinale.html">Valurt - Symphytum officinale</a><br />
+    <a href="http://efferus.no/Tradescantia.html">Vandrejøde - Tradescantia spp.</a><br >
+    <a href="http://efferus.no/Betula pubescens.html">Vanlig bjørk - Betula pubescens</a><br >
+    <a href="http://efferus.no/Mentha aquatica.html">Vassmynte - Mentha aquatica</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Parthenium integrifolium.html">Vill kinin - Parthenium integrifolium</a><br>
+    <a href="http://efferus.no/Allium oleraceum.html">Villøk - Allium oleraceum</a><br>
+    <a href="http://efferus.no/Allium ampeloprasum.html">Villpurre - Allium ampeloprasum</a><br>
+    <a href="http://efferus.no/Eruca selvatica.html">Vill rucola - Eruca selvatica</a><br>
+    <a href="http://efferus.no/Aralia nudicaulis.html">Vill sarsaparilla - Aralia nudicaulis</a><br>
+      <a href="http://efferus.no/Rubus phoenicolasius.html">Vinbringebær - Rubus phoenicolasius</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+      <a href="http://efferus.no/Vitis vinifera.html">Vindrue - Vitis vinifera</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br>
+    <a href="http://efferus.no/Ruta graveolens.html">Vinrute - Ruta graveolens</a><br>
+    <a href="http://efferus.no/Quercus petraea.html">Vintereik - Quercus petraea</a><br>
+    <a href="http://efferus.no/Barbarea vulgaris.html">Vinterkarse - Barbarea vulgaris</a><br>
+    <a href="http://efferus.no/Satureja montana.html">Vintersar - Satureja montana</a><br>
+    <a href="http://efferus.no/Prunus virginiana.html">Virginiahegg - Prunus virginiana</a><br >
+    <a href="http://efferus.no/Tradescantia.html">Virginiavandrejøde - Tradescantia virginiana</a><br >
+    <a href="http://efferus.no/Hydrophyllum virginianum.html">Virginiavassblad - Hydrophyllum virginianum</a><br>
+
+      <a href="http://efferus.no/Fragaria spp.html">Virginiajordbær - Fragaria virginiana</a><br>
+    <a href="http://efferus.no/Lonicera periclymenum.html">Vivendel - Lonicera periclymenum</a><br >
+    <a href="http://efferus.no/Angelica archangelica.html">Vossakvann - Angelica archangelica maiorum</a><br >
+    <a href="http://efferus.no/Cornus mas.html">Vårkornell - Cornus mas</a> <img src="./subPages/plantedatabase/plantebilder/rasterisk.jpg" alt="" width="12" height="12" /><br >
+    <a href="http://efferus.no/Ranunculus ficaria.html">Vårkål - Ranunculus ficaria</a> <img src="./subPages/plantedatabase/plantebilder/basterisk.jpg" alt="" width="12" height="12" /><br >
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">W</h3>
+    <a href="http://efferus.no/Wasabia japonica.html">Wasabi - Wasabia japonica</a><br>
+
+    <h1 style="padding-left: 2rem; padding-top: 2rem; padding-bottom: 1rem;">Å</h3>
+    <a href="http://efferus.no/Sonchus oleraceus.html">Åkerdylle - Sonchus arvensis</a><br>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+      <a href="http://efferus.no//NEW_index.html"><img src="bilder/Efferus_logo_white.PNG" style="padding-bottom: 2.5rem" width="300px" alt="efferus_logo"/></a>
+      <p style="width:65%; margin: auto;">Selskapet jobber med å skape løsninger for landbruksdrift som ivaretar livet i jorda.<br>
+          Dyrking etter skoghagemetoder fremstår ved første øyekast som lite overførbart til dagens landbrukspraksis, men det finnes mange områder man kan dra veksler på.
+          Kjernen i metoden ligger i å forstå plantenes samspill med andre organismer i jorda, og hvorfor det er så viktig å legge til rette for jordorganismene.
+          I seksjonen for sopp gis en redegjørelse for hvordan kunstgjødsel og ulike kjemikalier påvirker jordorganismene. Den aller viktigste døråpneren mot et landbruk fritt for plantevernmidler som endrer mikroorganismenes økologiske balanse, <br>
+          ligger i å reetablere bruken av sopp. Særlig viktig er mykorrhizasopp. De aller fleste planter lever symbiotisk med mykorrhiza som naturlig tilfører vann og næring og beskytter planten mot patogener. De få artene som ikke danner mykorrhizasymbiose 
+          kan i stor grad dra nytte av å samplantes med visse typer saprofyttisk sopp. Soppen på sin side er avhengig av tilstedeværelsen av en rekke andre jordorganismer.
+      </p>
+  </div>
+  <ul class="socials">
+      <li>
+          <h3>Besøk oss</h3>
+          <a href="http://efferus.no/https://www.facebook.com/EfferusVeksthus" target="_blank"><img src="./bilder/facebook_icon.png" width="50px"></a>
+      </li>
+  </ul>
+</footer>
+
+</body>
+</html>

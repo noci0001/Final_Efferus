@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planteformering</title>
+    <link rel="shortcut icon" href="bilder/deciduous-tree.ico">
+    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+</head>
+    
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        
+        <li><a href="./plantebistand.html">Plantebistand</a></li>
+        <li class="services">
+          <a href="./database.html">Database</a>
+        </li>
+        <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+        <li><a href="./vision.html">Vår visjon</a></li>
+        <li><a href="./events/visitUs.html">Besøk oss</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+      </div>
+    </ul>
+</nav>
+
+
+<!-- NAVIGATION MENU DATABASE -->
+
+<div class="nav2">
+  <div class = menu2>
+    <div class="item" id="demo1">
+      <a>Navigere til</a>
+      <div class = menu2>
+        <div class="item"><a style="position: relative; color: white;" href="#titlePlant" style="color: white">TO TOP</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./fro.html" style="color: white">FRØ OG PLANTER</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./husapotek.html" style="color: white;">HUSAPOTEK</a></div class="item">
+        <div class="item"><a style="position: relative; color: white;" href="./Oppskrifter.html" style="color: white;">KONSERVERING</a></div class="item">  
+        <div class="item"><a style="position: relative; color: white;" href="./formering.html" style="color: white;">PLANTEFORMERING</a></div class="item">   
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div id="middle">
+  <div id="submenu"><table width="201" border="0" cellspacing="0" cellpadding="0">
+    <td><div align="center" class="sub-bg">
+    
+      <p>
+      <a href="kurs.html">Kurskalender </a><br><br>
+      <a href="bie.html">Humle- og bieplanter</a><br><br>
+      <a href="hsoner.html">Planter inndelt etter herdighetssone</a><br><br>
+      <a href="plantepakker.html">Plantepakker</a><br><br>
+      <a href="skoghagebilder.html">Bilder fra en skoghage</a><br><br>
+      <a href="nitrogen.html">Nitrogenfiksering</a><br><br>
+      <a href="./subPages/jord.html">Jorddekkere</a><br><br>
+      <a href="vind.html">Vindbrytere</a><br><br>
+      <a href="tre.html">Trær</a><br><br>
+      <a href="busker.html">Busker</a><br><br>
+      <a href="perennial.html">Stauder</a><br><br> 
+      <a href="systemplanter.html">Systemplanter</a><br><br> 
+      <a href="andre.html">Andre planter</a><br><br>
+      <a href="Rovinsekter.html">Skadeinsekter og nytteinsekter</a><br><br>
+      <a href="plantesykdommer.html">Plantesykdommer</a><br><br>
+      <a href="beskjaering.html">Beskjæring</a><br><br>
+      <a href="ugressmiddler.html">Ugressmiddel</a><br><br>
+
+      </p>
+    </div> -->
+
+</table>
+</div>
+  <div style="width: 700px; margin: auto; padding-top: 7rem;">
+    <h1 id=titlePlant style="padding-bottom: 2.5rem;">Planteformering</h1>
+    <a href="#Avleggere" style="font-weight: 800; color: black;">Avleggere<br/></a>
+   &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Enkle">Enkle avleggere</a><br>
+   &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Jordhaugavleggere">Jordhaugavleggere</a><br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Luftavlegger">Luftavleggere</a> <br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Slangeavlegger">Slangeavleggere</a> <p>
+  
+  <a href="#Deling" style="font-weight: 800; color: black;">Deling<br /></a>
+
+     &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Delingenkeltskudd">Deling av enkeltskudd</a><br />
+     &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Delingrotskudd">Deling av rotskudd</a><br />
+     &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Delingtuer">Deling av tuer</a><p>
+     
+     
+  <a href="#Podeteknikker" style="font-weight: 800; color: black;">Podeteknikker<br /></a>
+  
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Flisspiring">Flis spiring</a><br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Kloftpoding">Kløft poding</a> <br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Pisk">Pisk</a><br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Pisktunge">Pisk og tunge</a><br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Sidesammenfoyning">Sidesammenføyning</a> <br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Sidebeleggsammenfoyning">Sidebeleggsammenføyning</a> <br>
+ &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Toppkilepoding">Toppkile poding</a> <p>
+ 
+ <a href="#Stiklinger" style="font-weight: 800; color: black;">Stiklinger<br /></a>
+
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Blad">Bladstikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Grønnved">Grønnvedstiklinger</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Hardved">Hardvedstiklinger</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Hæl">Hælstikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Klubbe">Klubbestikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Mykved">Mykvedstiklinger</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Rotstikling">Rotstikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Semimoden">Semimodne stiklinger</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Stilkbase">Stilkbasestikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Stilkstikling">Stilkstikling</a><br>
+  &nbsp;  &nbsp; &nbsp; &nbsp; • <a href="#Stilktupp">Stilktuppstikling</a><br>
+
+  
+  <p><br />
+        Begrepene som her benyttes er ikke nødvendigvis korrekte faguttrykk. I mange tilfelle mangler meg bekjent faguttrykk når det kommer til endel moderne planteformeringsteknikker. Begrepene er mer ment å lette forståelsen for hva som er velegnet formeringsmåte for hver enkelt plante i <a href="trehage.html">skoghagen</a>.<p>
+        
+      Det er vanlig å dele plantenes formeringsevne inn i to hovedkategorier: kjønnet og ukjønnet formering. <p>Ved <strong>kjønnet</strong> formering forenes det genetiske materialet fra hun- og hanplante i frøet, som får en særegen genetikk med begge foreldrenes trekk. Fordelen med kjønnet formering er at plantearter tilpasser seg miljømessige endringer, og kan kolonisere områder den tidligere ikke klarte seg i. Nye former for blomster, blader, herdighetsevner, sykdomsmotstandigheter utvikler seg innen arten. Bakdelen er at frøet kan miste mye av moderplantens spesielle kvaliteter - foreksempel fruktstørrelse og mengde.
+      I mange tilfelle er ikke planten kultivert til å gi store avlinger eller fungere for andre formål, og da vil formering fra frø være den billigste og letteste måten å dyrke planten på. 
+      <p>1) Frø
+      <p>
+      Ved <strong>ukjønnet</strong> vegetativ formering produserer planten kloner som er genetisk identiske med seg selv. Denne type formering forekommer ofte naturlig og på en rekke forskjellige måter. Noen planter formerer seg vegetativt ved å produsere en masse med røtter og skudd som er kapable til å leve som separate planter. Andre planter kan lage nye skudd fra jordløpende stengler eller andre spesialiserte organer. Planten kan på denne måten kolonisere et område langt raskere enn via frø. Det finnes mange metoder som kan simulere eller utnytte plantenes hang til å formere seg på denne måten. 4 metoder introduseres her.
+      <p>
+      2) Deling <br>
+      3) Utløpere eller avleggere<br>
+      4)  Stiklinger<br>
+      5) Poding <br>
+      
+      <h2>1- Frø</h2>
+      Det er langt bedre å dyrke planter fra frø under kontrollerte omgivelser i et veksthus eller drivhus av flere grunner. Mange frø bruker svært lang tid på å spire og i et drivhus så slipper de konkurranse fra ugress. Frø fra trær og busker står dessuten øverst på menyen til en lang rekke gnagere og fugler. Skal frøene i tillegg statifiseres først så har de en lang sesong i jorda før de begynner å spire. Har du god plass så ta gjerne vare på frø som har hatt liten spiringsrate og sett de ut igjen neste år. En god veldrenert frøkompost er også viktig for å skape en god kontakt med frøet uten at det drukner av oksygenmangel. En frøkompost trenger ingen næring fordi frøene skal ikke vokse lenge i den. Jeg anbefaler ikke en vanlig hjemmelaget kompost fra kompostbingen siden den ofte inneholder mye ugressfrø. Økologisk frøkompost koster ikke all verden og rekker ganske langt. Bland inn litt vermiculitt for å lage god drenering. For ungå snegleangrep er det lurt å lage en anordning der frøbrett eller rottrenere plasseres litt over bakken utligjengelig for snegler. Ved kjølige temperaturer med mye fuktighet kan også sopp bli et problem. God ventilasjon og varme er kuren, som betyr enten varmevifte eller en seinere start på våren. En rekke skadeinsekter melder sin ankomst et stykke utpå våren, og gule fluefangere er uvurderlig for å ta unna brorparten av disse. Gjerne i to omganger hvis fellene blir overfyllte i løpet av sesongen. De største rovinsektene klarer fint å komme seg løs fra disse fellene. Hvis veksthussnutebillen blir et problem finnes det en god økologisk bekjempelse av den med rundormer som fåes kjøpt i pulverform som kan blandes ut med vann og vannes på frøkomposten. Rundormene lever som parasitter på snutebillen og tar raskt livet av den. Hvis frøplantene plutselig stopper å vokse midt på sommeren så mangler de sannsyneligvis en symbiose med en mykorrhiza sopp som den trenger for å vokse, dette skjer ganske ofte med nåletrær. Den beste måten å etablere en symbiose er å å ta litt overflatejord og nåletreavfall under et veletablert nåletre og drysse det oppå kompostjorda rundt frøplanten. Den vil da snart begynne å vokse igjen.
+      <p>
+    Vermiculitt, rottrenere og fluefangere kan kjøpes i <a href="skogshop.html">skogshopen</a>.
+      
+      <h2>2- Deling</h2>
+      <strong>Deling av tuer</strong><br />
+      Deling av 1 plante til flere selvstendige planter. Denne metoden utnytter endel stauders hang til å produsere en tue av tett sammenvokste skudd. De har en klumpform som kan splittes eller deles opp til flere skudd med selvstendige røtter. Dette er raskt og enkelt, men gir bare noen få nye planter. Må ofte gjøres på våren når planten mangler løvverk som trenger vann. Dette er også en periode røttene lett  etablerer seg. Det er best å bruke en nensom hånd som river delene fra hverandre men man kan også bruke spade hvis delene er fysisk sammenvokste. Denne metoden fungerer ikke for stauder med pålerøtter. Noen få busker har klumformende røtter og kan deles som stauder. En enkel <a href="http://www.youtube.com/watch?v=FJeWah7Jonc&feature=player_embedded" target="_blank">instruksjonsvideo for deling av stauder finner du her</a>
+      <p>
+      <strong>Deling av enkeltskudd</strong><br />
+    Noen arter kan deles i hvert lille skudd som dukker opp tidlig på våren. En god porsjon av rota må følge med hvert skudd, og man må legge litt arbeid i å lage minst mulig skade. Slike planter trenger i større grad beskyttelse etter deling fra vær og vind og nyter godt av å etablere seg i et veksthus. 
+      
+      <p>
+        <strong>Deling av rotskudd</strong><br />
+        Endel busker og trær lager rotskudd som kan deles fra hovedstammen. Dette bør ideelt gjøres tidlig på våren før planten begynner å vokse. Løft rotskuddet forsiktig med en hagegaffel for å se om skuddet har selvstendige røtter. I såfall kan det kuttes av nært inntil foreldreplanten. Del skuddene slik at hver hvert skudd har selvstendige røtter. Kutt av halvparten av toppveksten for å unngå vesketap. Bør vannes regelmessig til røttene har etablert seg.
+      <p>
+        <img src="bilder/rotskudd.gif" width="250" height="121" />
+      <p>
+        <u>Deling av busker med rotskudd</u>:
+        <br>
+        1. Løft en underjordisk grein tidlig på våren med en hagegaffel uten å forstyrre hovedplanten. Sjekk at det er fiberrike røtter på basen av rotskuddet.<p>
+        2. Kutt av rotskuddet med en beskjæringssaks nær foreldreplanten. Dytt forsiktig jord rundt foreldreplanten.<p>
+        3. Kutt hovedstammen på rotskuddet tilbake til de fiberrike røttene. Kutt vekk omtrent halvparten av toppveksten for å forhindre vesketap.<p>
+        4. Rotskuddet kan plantes direkte på ny plass eller pottes i veksthus hvis det er svakt.
+      <h2>3- Utløpere eller avleggere</h2>
+      Noen planter danner tilfeldige røtter fra rot- eller bladstengler der de berører jorda. De fungerer som stiklinger som fremdeles er tilknyttet og beskyttet av foreldreplanten, og som derfor ikke trenger et så kontrollert miljø som stiklinger. Avleggere krever heller ikke så mye kunnskap og etterjobb som poding. Jorbær er kanskje stauden som er mest kjent for sine jordløpende stengler, men de fleste stauder, busker og trær kan formeres vegetativt på denne måten. Ved å skade stammen kan man utnytte plantens hang til å danne nye røtter ved skadestedet når de fremdeles er tilknyttet foreldreplanten. Når nye røtter er dannet kan den kuttes fra foreldreplanten og dyrkes individuelt. <p>
+      <strong>Luftavleggere</strong><br />
+      En teknikk som benyttes på busker, trær eller klatrere som ikke har greiner som når bakken. Det er oftest best å lage luftavleggere på våren som kan plantes om individuelt på høsten eller påfølgende vår. 
+        <p><table class="image" align="right">
+    <caption align="bottom">Luftavlegger</caption>
+    <tr>
+      <td><img src="bilder/luftavlegger.jpg" width="157" height="187"  hspace="20" border="1" alt="Luftavlegger" align="right"/></td></tr>
+    </table>
+      1. Velg et 1-2 år gammelt skudd som er rett og frodig (Årsskudd som har modnet litt for trær). Skjær av sideskudd og blader (ikke la stumpene sitte igjen) på ca 30 cm av greinen. 
+      <p>
+      2. Skjær et 3 cm skrått kutt inn mot senter av greina - mot tuppen av et skudd. <a href="sfspiletre.html">Ta på rothormonveske</a>.Pakk inn såret med litt fuktig torvmose, også inni såret for å holde det åpent. (Trær kan også skades ved å skjære ut en 1-2.5 cm vid ring av bark).
+      <p>
+      
+      
+      
+      3.Pakk inn såret med torvmosen forsiktig med svart plastikk og fest med teip i begge ender.<p>
+      4. Sjekk såret innimellom for å se etter rotdannelse. Vent til neste vår hvis rotdannelsen er svak
+      <p>
+      5. Når nye sterke røtter er dannet kan plastikken forsiktig fjernes. Kutt greine rett under rotballen, og fjern forsiktig overflødig mose. Luftavleggere av trær kuttes av i vinkel rett over et bladskudd og man fjerner litt toppvekst hvis det er mye for å stimulere rotveksten.. <p><br /><p>
+
+      
+      
+        
+        <strong>Enkle avleggere</strong><br />
+        Hvis du trenger få nye planter så er denne metoden en enkel og rask metode som fungerer på en rekke planter. Fungerer best tidlig på våren og om høsten. Våren fungerer best for eviggrønne trær og høsten for bladfellende trær.<p>
+    <u>Enkle avleggere av klatrere</u>:
+        <br>
+    1. Velg et ungt lavtvoksende skudd på høsten. Fjern blader og sideskudd på minst 30 cm av stammen bak tuppen av skuddet.<p>
+    2. Lag et skrånende kutt på stammen (på motsatt side av skuddene eller undersiden, og midt mellom skuddene der stammen er helt bar) som er ca 2.5 cm langt - en tunge.<p>
+    3. Ta på <a href="sfspiletre.html">rothormonveske</a>. <p>
+    4. Stift ned stammen der stammen er bar, men såret ned. Ta 8 cm med jord over. Fest tuppen av skuddet på en pinne slik at det vokser oppover. <p>
+    5. Når det har kommet tilstrekkelig med røtter (vanligvis følgende høst), kuttes avleggeren av. <p>
+    <u>Enkle avleggere av busker (+ enkelte stauder):</u><br>
+    1. Merk plassen der den utvalgte greinen berører bakken med en pinne. Lag en hellende renne ned i jorda fra pinnen mot busken. Renna skal være ca 8 cm dyp. 
+    <p>
+    2. Stift greinen fast omtrent midt i renna. Bøy tuppen av greinen oppover og fest den på pinnen. Fyll renna med løs jord og vann godt.<p>
+    3. Greinen kan kuttes av stammen når røttene er godt etablert.
+    <p><img src="bilder/enkelavleggerbusk.gif" width="225" height="150" />
+    <p>
+    <u>Enkle avleggere av trær:</u>
+    <br>
+    1. Merk plassen der den utvalgte greinen berører bakken med en pinne. Lag en hellende renne ned i jorda fra pinnen mot busken. Renna skal være ca 8-15 cm dyp. 
+    <p>
+    2. Velg et sterkt og friskt skudd fra forrige sesongs vekst. Lag et skadekutt 30 cm fra tuppen, på nedsiden av greina. Kutt av an barkstrimmel på 2.5-5 cm eller lag en tunge som du åpner med en fyrstikk.
+    <p>
+    3. Dypp i rothormonveske og hell også rothormonveske på jorda hvor greinen skal festes. Stift greinen fast på begge sider av såret i en dybde på 8-15 cm. Bøy tuppen av greinen oppover og fest den på pinnen. Fyll renna med løs jord og vann godt.
+    <p>
+    4. Greinen kan kuttes av stammen når røttene er godt etablert. Bladfellende trær bør kuttes av på høsten, mens eviggrønne bør kuttes av tidlig på våren. Bør vokse i potte i veksthus fra 2-5 år før den plantes ut.
+    
+    <p>
+      <strong>Jordhaugavleggere</strong> <br />
+      Fin teknikk for eldre urteaktige stauder og busker. Miks litt jord med torv og sand på våren og bygg det opp rundt basen av planten på våren. Erstatt det hvis det vaskes bort av regn. Vann jevnlig. På seinsommeren har røtter dannet seg på flere av stilkene som kan kuttes av og dyrkes som individuelle planter.
+      
+      
+      <p>
+      <strong>Selvlagde avleggere</strong> <br />
+      Noen lavtvoksende klatrere og stauder slår naturlig røtter ettersom de vokser bortover bakken. Da er det bare å løfte et skudd som har slått røtter med en hagegaffel og kutte det av og dyrke avleggeren som en selvstendig plante. Alternativt kan man kutte av stammen eller den jorløpende stengelen av på begge sider og la den vokse som en individuell plante der den allerede er etablert.
+      <p>  
+      <strong>Slangeavleggere</strong><br />
+      Fin teknikk for mange klatrere, som lager lange skudd hvert år. På våren tar man en grein fra forrige års vekst ned på jorda. Blader og sideskudd fjernes. Man kan skade greinen mellom skuddene som for enkle avleggere for å fremskynde rotformasjon. Stift fast greinen mellom skuddene med såret vendt nedover og legg den som en slange (plassbesparende) bortover jorda. Ofte vil avleggerene ha tilstrekkelig med røtter til høsten og kan da behandles som selvlagde avleggere.<p>
+        <img src="bilder/slangeavlegger.jpg" width="225" height="150" />
+      <p>
+      
+      <h2>4- Stiklinger</h2>
+      Utnytter plantevevet fra stammen, bladet, roten eller skuddet sin evne til å danne en fullt utviklet plante. "Skaderøtter" utvikler seg fra sårsteder, og denne metoden består i å kutte av egnede plantedeler som slår røtter under rette omstendigheter. For å lykkes med denne metoden er det viktig å finne en sterk foreldreplante ved god helse. Materialer fra yngre planter danner oftere røtter. Vann foreldreplanten mye noen timer før avskjæring, særlig ved bladavskjær. Sett avskjær eller stikling raskt i jord eller rotmedium for å unngå tap av veske. God hygiene med sterilt og skarpt redskap er viktig. Bunnhete på 15-25°C og kjølig luft med høy luftfuktighet (Minitunnel av polyeten selges i <a href="skogshop.html">skogshopen</a>) øker sjansen for å lykkes. Jord eller rotmedium må til enhver tid være fuktig. Bladavskjær slår røtter etter ca 3 uker, mens treaktige planter kan bruke måneder - det er store individuelle forskjeller. 
+      <p>
+      <strong>Urteaktige</strong><br />
+      Mange stauder er lett å lage stiklinger av. Medlemmer av myntefamilien er spesielt velvillige. Skjær av en stikling og sett den enten i vann til den formerer røtter eller plassèr den rett i fuktig jord. Stiklinger som ikke slår røtter like lett kan hjelpes av et mer veldrenert rotmedium som for eksempel en miksture av torv, perlitt, vermiculitt eller sand. Ikke bruk gjødsel med høyt nitrogen innhold, Stiklinger som taes fra toppveksten av stauder er ofte fra vår, forsommer eller seinsommervekst og trenger et fuktig miljø i form av en veksttunnel eller liknende. Stiklinger fra ny sterk vekst er å foretrekke, helst uten blomsterskudd. Er det vanskelig å ta stiklinger uten blomsterskudd fjernes disse. Stiklinger lykkes oftere med å danne røtter hvis de gis litt bunnvarme. De trenger også delvis herding, før de plantes ut.
+      Nesten alle typer urteaktige stiklinger kuttes under et bladskudd der de aktive veksthormonene er mest aktive. <a href="sfspiletre.html">Rothormonveske</a> er ikke alltid nødvendig men hjelper til å få fart på rotdannelsen.
+      <p><u>Stilktuppstikling av staude</u><br />
+      Rockwool og vermiculitt fungerer bra som rotmedium for stilktuppstiklinger.
+      
+      
+      
+      Stiklinger fra vår- og forsommervekst har myk vekst og er svært skjøre og brekker hvis de bendes eller klemmes for hardt. De danner ofte røtter innen to uker. Seinsommerstiklinger tåler langt mer, men er sårbare for kuldeperioder tidlig på høsten. Seinsommerstiklinger bruker 4-8 uker på å danne røtter. <p>
+      1. Velg vekst med tette og kraftige bladskudd. Kutt rett under et bladskudd 8-13 cm under tuppen av skuddet. Kutt av med kniv, ikke saks.<p>
+      2. Putt i plastpose til de kan forbredes. Skjær av de nederste bladene med kniv. <p>
+      3. Lag hull i rotmedium med en prikklepinne eller liknende og sett i stiklingene med de laveste bladparet rett over overflaten. Pakkvarsomt rundt stiklingen og vann.
+      4. Plasser i veksttunnel eller liknende som gir et miljø med høy luftfuktighet. De skal stå i gode lysforhold med en minimumstemperatur på 18°C. <p>
+      5. Er stiklingene plantet i rockwool må de ikke fjernes fra rotmediet når de har dannet røtter men plantes om med rotmediet.
+      <p><u>Stilkstikling av staude</u><br />
+      Noen langstammende stauder kan deles i 5-8 cm lange seksjoner. Toppen av hver stikling kuttes rett over et blad, og basen rett under et blad. Fjern nederste blad eller fler blad hvis det er mange blad på stammen - nok til at stammen er bar der den er i kontakt med rotmediet. Behandles videre som stilktuppstiklinger. 
+      <p><u>Stilkbasestikling av staude</u><br />
+      Populær metode fordi stiklingene raskt vokser til fullvoksne planter og er derfor maksimalt utrustet mot en kald vinter. Et velegnet rotmedium er en del torv blandet med en del sand. Bør beskyttes mot direkte sollys på varme sommerdager.<p>
+      1. Når nye skudd kommer fra basen av en staude som har blitt 8-10 cm høy på våren, kuttes det nye skuddet av helt inntil basen av stauden. <p>
+      2. Fjern nederste blader og kutt av rett under et bladskudd slik at stiklingen blir 5 cm lang. <p>
+      3. Putt i <a href="sfspiletre.html">rothormonveske</a>.
+      <p>
+      4. Sett i rotmedium. Vann godt og plassér i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Bunnhete får fart på rotutviklingen.<p>
+      5. Når rotdannelsen er godt i gang etter ca 4 uker kan stiklingene pottes om i individuelle potter.
+      
+      <p><u>Bladstikling av staude</u><br />
+      Noen planter kan danne både røtter og skudd fra deler av blad eller hele bladet. <p>
+      
+      <em>Delbladstiklinger</em><br />
+      1.  Stiklinger laget av deler av bladet kuttes i to deler der bladets vener får et sår på hver side av midtnerven som kastes. 
+      <p>
+      2. Bladdelen plasseres i et veldrenert rotmedium med kuttsiden ned. Pakk jorden rundt basen av stiklingen. Sett i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet.
+      <p>
+    <em>Helbladstiklinger</em><br />
+      1. Kutt et sterkt og frist blad fra foreldreplanten nær basen av bladstilken. Sett i potte med en del sand og en del torv slik at basen av bladet akkurat berører rotmediet.
+      <p>
+      2. Vann godt og sett i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Beskytt mot direkte sollys.<p>
+      
+
+    <u>Rotstikling av staude</u><br />
+    Rotstiklinger er best å ta i plantens dvaleperiode tidlig på vinteren. En tommelfingerregele er at jo tynnere stiklingen er dess lenger bør den være. Svært tynne rotstiklinger bør dessuten plantes horisontalt. Rotstiklinger må beskyttes mot kulde og må ikke utsettes for kuldegrader. Ekstra tynne stiklinger bør ikke utsettes for temperaturer under 7°C.<p>
+    1- Vask roten fri for jord og kutt den sterkste delen av rota så nær kronen som mulig. Ikke fjern mer enn 1/3 av røttene fra foreldreplanten.
+    <p>
+    2. Kutt hver seksjon i 5-13 cm lange biter (tynnest lengst). For å være sikker på at den er riktig vei kutt bunnen av stiklingen i skrå vinkel.<p>
+    3. Lag hull til stiklingene i rotmediet, toppen av stiklingen skal være på linje med jordoverflaten.
+    <p>
+    4. Dryss ett 1 cm lag med fin sand på toppen og sett på et beskyttet sted. Sentvoksende planter danner lettere røtter med bunnvarme. Vann kun for å forhindre uttørking inntil rotdannelse er synlig på våren.
+
+
+
+    Rotstiklinger produserer gjerne et sett med nye skudd før røttene dannes.<p><strong>Vedaktige</strong> <br />
+    Vedaktige stiklinger slår lettest røtter når moderplanten er ung og produserer mange nye, lange og friske skudd hvert år. Det beste stiklingsmaterialet er ofte den nye veksten som ikke er alt for spinkel og svak, ei heller den mest energiske og kraftige som har en tendens til å være hul og har derfor lettere for å råtne. Stiklinger bør også taes på morgenen for da er vannreservene som er bygd opp over natten fremdeles til stede i planten. Kan du ikke fullføre stiklingsjobben umiddelbart bør de lagres i rene plastikkposer - på et kjølig sted hvis det tar mer enn et par timer. Alt utstyr bør være sterilt. Neste alle typer stiklinger nyter godt av kunstige rothormoner, og jeg har laget en enkel hjemmelaget <a href="sfspiletre.html">rothormonoppskrift her</a> som fungerer godt på de fleste stiklinger. Ved å skade stiklingen ved å fjerne en barkestrimmel ved basen av stiklingen så åpner en opp området hvor celledelingen finner sted. Hensikten med det er øke vannopptaket og rothormonveskeopptaket. Vær varsom slik at sårskaden ikke blir for dyp. Noen plantearter lager røtter svært raskt slik at mange steg i prosedyrene nedenfor blir overflødige.
+      <p>
+      <u>Mykvedstiklinger av busker og klatrere</u><br><table class="image" align="right">
+    <caption align="bottom">Mykvedstikling av busk</caption>
+    <tr>
+      <td><img src="bilder/mykvedbusk.jpg" width="257" height="227"  hspace="20" border="1" alt="Mykvedstikling" align="right"/></td></tr>
+    </table>
+      Mykvedstiklinger fra busker og klatrere taes på våren og tidlig på sommeren. <p>
+      1. Lag en stikling med 2-3 bladpar. Kutt rett under et bladskudd. 
+      <p>
+      2. Fjern den myke tuppen rett over et bladskudd, og fjern det nederste bladparet. At tuppen fjernes fremmer at planten ikke vokser defra men i basen slik at den lager en buskaktig vekst fra starten av. I tillegg så redistribueres vekshormoner til basen av stiklingen som sikrer bedre rotvekst. Kutt også store blader i 2 for å redusere vesketapet. Stammen på stiklingen bør være ca 4-5 cm.
+      <p>
+      3. Mykvedstiklinger må puttes varsomt ned i rotmedium, en priklipinne eller penn er fin å bruke for å lage hull og pakke jord rundt. Bladene skal være rett over jorden og ikke være i berøring med hverandre.<p>
+      4. Vann godt plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Stiklingene bør stå noe skyggefullt.
+    
+      <p>
+      <u>Mykvedstiklinger av trær</u><br>
+      Mykvedstiklinger taes normalt seint på våren fra de rasktvoksende tuppene av nye årsskudd. Denne type stiklinger danner ofte røtter svært raskt. De bør taes tidlig på morgenen og settes raskt i  rotmedium siden de tørker ut raskt. 
+      <p>
+      1. Skjær av et 5-8 cm langt, mykt skudd. Kutt i foreningen mellom årets og fjordårets vekst. Er skuddet lenger enn 8 cm fjernes tuppen av skuddet (Dette for å lede veksthormonene mot basen  til stiklingen).
+      <p>
+      2. Sett i <a href="sfspiletre.html">rothormonveske</a>.<p>
+      3. Sett i individuelle potter eller rottrenere med 1 del perlite, fin sand eller vermiculitt og 1 del torv. Alternativt kan man benytte rockwool som rotmedium. Vann mye.<p>
+      4. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. <p>
+      5. Fjern døde eller syke blader med jevne mellomrom. <p>
+      6. Røtter dannes normalt etter 6-10 uker og planten er normalt klar til å plantes ut etter 2-3 år.
+      <p>
+      <u>Grønnvedstiklinger av busker og klatrere</u><br>
+      Som for mykvedstiklinger, men taes noe seinere på sommeren. Ofte er det vanskelig å se forskjell på plantematerialet, men det er kun noen få arter hvor forskjellen har stor betydning for å lykkes.
+      <p>
+      <u>Grønnvedstiklinger av trær</u><br><table class="image" align="right">
+    <caption align="bottom">Grønnvedstikling av tre</caption>
+    <tr>
+      <td><img src="bilder/gronnvedstikling.jpg" width="307" height="327"  hspace="20" border="1" alt="Grønnvedstikling" align="right"/></td></tr>
+    </table>
+      Grønnvedstiklinger taes når stammen på årsskuddet er litt fastere og mørkere enn på mykvedstiklingen. Dette er i perioden fra seint på våren til midtsommeren.
+      <p>
+      1. Skjær av et 25-30 cm langt årsskudd i foreningen mellom årets og fjordårets vekst. 
+      <p>
+      2. Fjern tuppen av skuddet rett ovenfor et bladskudd. Fjern bladet nærmest basen og lag et skadekutt (strimmel av bark) på 2.5 cm. Større blader kuttes i to for å minske vesketap. En ferdiglaget stikling bør være 8-10 cm lang med 3 bladkudd. <p>
+      3. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+      <p>
+      4. Sett i individuelle potter eller rottrenere med 1 del perlite, fin sand eller vermiculitt og 1 del torv.  Vann mye.
+      <p>
+      5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. <p><p><br /><p><br /><p>
+
+    <u>Semimodne stiklinger av busker og klatrere</u><br />
+      Fin teknikk for å lage stiklinger av en rekke busker og klatrere - eviggrønne som bladfellende. Semimodne stiklinger taes av årsskudd fra midtsommeren til tidlig på høsten når de har blitt mørke og hardvedaktige. 
+      <p>
+      1. Ta et årsskudd som er myk på tuppen og fremdeles i aktiv vekst, men som har en hardnet stamme. Lengden på stiklingen kommer litt an på vekstvanen til planten, men 6-10 cm er passende lengde på de fleste. Kutt av med en beskjæringssaks. 
+      <p>
+      2. Skjær av alle sideskudd og beskjær dem til 10-15 cm lengde ved å kutte rett under et bladskudd. Fjern det nederste bladparet og den myke tuppen
+      <p>
+      3. Lag et skadekutt (strimmel av bark) på 1-2 cm ved basen av stiklingen.
+      <p>
+      4. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+      <p>
+      5. Sett stiklingene i potter med en miks av 1 del torv og 1 del fin bark eller perlitt. Alternativt kan rockwool benyttes. Pakk jorda rundt stiklingen og vann.
+      <p>
+      6. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Gråbladete planter skal ha noe mindre luftfuktighet <p>
+      7. Fjern døde eller syke blader med jevne mellomrom. <p>
+      8. Røtter dannes normalt i løpet av høsten eller vinteren, men trenger normalt en vekstsesong til med gradvis herding før den plantes ut.
+      
+      <p>
+      
+      
+      <u>Semimodne stiklinger av trær</u><br /><table class="image" align="right">
+    <caption align="bottom">Semimoden stikling av tre</caption>
+    <tr>
+      <td><img src="bilder/semimoden.jpg" width="227" height="247"  hspace="20" border="1" alt="Semimoden stikling" align="right"/></td></tr>
+    </table>
+      Fin teknikk for å lage stiklinger av bredbladete eviggrønne trær og mange nåletrær. Semimodne stiklinger taes av årsskudd seint på sommeren eller tidlig på høsten når de har blitt mørke og hardvedaktige. 
+      <p>
+      1. Ta et årsskudd som er myk på tuppen, men som har en hardnet stamme. Kutt en 10-15 cm lang stikling rett over skudd med en beskjæringssaks. 
+      <p>
+      2. Fjern alle blader bortsett fra de to øverste som kuttes i to. Dette kuttet må gjøres med en skarp og steril kniv, og det gjøres for å hindre vesketap. Lag et skadekutt (strimmel av bark) på 3 cm ved basen av stiklingen.<p>
+      3. Sett i <a href="sfspiletre.html">rothormonveske</a>.<p>
+      4. Sett stiklingene i potter med en miks av 1 del torv og 1 del fin bark. Alternativt kan rockwool benyttes. Stiklingen skal bare settes langt nok ned til at den står oppreist av seg selv. Pakk jorda rundt stiklingen og vann.<p>
+      5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. <p>
+      6. Fjern døde eller syke blader med jevne mellomrom. <p>
+      7. Røtter dannes normalt i løpet av høsten eller vinteren.
+      <p>
+    <u>Semimodne stiklinger av nåletrær og nålebusker</u><br />
+    Likner metoden for bladfellende trær, men med noen vesentlige forskjeller. Mange nåletrær lager ny vekst fra spesialiserte skudd: Toppskudd eller hoveskudd har en tendens til å vokse vertikalt, sideskudd horisontalt. Stiklinger fra sideskudd vil hos mange nåletrær ikke vokse som hovedskudd, men det finnes unntak. 
+      <p>Fra tidlig høst til midt på høsten, samt midtvinters, er sannsyneligheten for rotdannelse størst.
+      Rotmedium må være veldrenert - 1 del torv, perlitt eller vermiculitt blandet med 1 del sand. Trenger stiklingene høy luftfuktighet benytttes 2/3 sand. Ikke pakk rotmediet. Stiklinger taes oftest fra fjordårsvekst som også vil avgjøre lengden på stiklingen. Sideskudd og nåler fjernes fra den nederste tredjedelen av stiklingen. De små sårene som sitter igjen fremmer rotdannelse. Sett i <a href="sfspiletre.html">rothormonveske</a>. Vann veldig forsiktig. Røtter dannes normalt innen 3 måneder. Tåler ikke frost. Danner røtter fortere med bunnhete på ca 20°c.<p>
+      
+    <u>Hardvedstiklinger av busker og klatrere</u><br />
+      Fremgangsmåten for bladfellende og eviggrønne planter er noe forskjellig. Stiklinger fra begge egner seg best på seinhøsten til midtvinters, når årsveksten har vokst fullt ut og når de bladfellende plantene har begynt å miste blader eller mistet bladene helt. Hardvedstiklinger er langt større enn stiklinger fra mykved og semimodne busker. Grunnen til det er at de danner røtter langt seinere så trenger de større matreserver å ta av for å overleve vinteren. <p>
+      <em>Bladfellende</em>:<br />
+      
+    1. Lag en stikling som er ca 20 cm lang. Fjern gjenværende blader. Lag et horisontalt kutt rett under et bladskudd og et skrått kutt fra skuddet på toppen. Tuppen av greiner og greinmateriale helt ved basen av stammen er uegnet materiale for hardvedstiklinger. Er det en art som har vanskelig for å lage røtter vil det hjelpe å lage et  skadekutt (strimmel av bark) på 1-2 cm ved basen av stiklingen.
+      <p>
+    2. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+      <p>
+    3. Sett i jordbasert rotmedium. Må være ekstremt veldrenert (mye sand hjelper) ellers dør stiklingen. Kun 5 cm av toppen av stiklingen skal være synlig. Pakk jorden og vann godt. Fjern ugress umiddelbart hvis det dukker opp.<p>
+    4. Røtter dannes seint, slik at når bladene spirer på våren er det viktig å vanne godt fordi de kan tørke fort ut på grunn av et spinkelt rotsystem.<p>
+
+    <em>Eviggrønn</em>:<br />
+    1. Kutt skuddene i 20-25 cm lange seksjoner. Lag kuttet rett nedenfor et bladskudd nederst og rett over et bladskudd øverst. Fjern blader og sideskudd fra nederste halvdel av stiklingen.<p>
+    2. Sett 5- 8 stiklinger i en potte slik at kun den øverste halvdelen er synlig. Røtter dannes normalt etter 6-10 uker hvis bunnhete benyttes. Plasttunnel for å øke luftfuktighet er også fordelaktig.
+    
+    <p>
+      <u>Hardvedstiklinger av trær</u><br />
+      En av de aller enkleste måtene å formere bladfellende trær på. 
+      Stiklinger fra hardved taes i treets dvaleperiode, normalt seint på høsten rett etter bladfelling, eller tidlig på våren rett før knoppskudd. Jorda er da  varm og gir et godt grunnlag for rotdannelse. Hardvedstiklinger kan i mange tilfelle også taes i løpet av hele vinteren. Disse stiklingene tas fra greiner med en diameter på 0.6 til 1.5 cm, med det laveste kuttet rett under et bladskudd og det øverste kuttet rett over et bladskudd. Lengden på stiklingen er normalt 15-30 cm. Stiklingen bør umiddelbart puttes i <a href="sfspiletre.html">rothormonveske</a> og deretter i sand, med 5 cm av greinen stikkende opp av sanden.
+      
+      Man kan også lage en bunt med opptil 10 stiklinger. Sand helt uten jord beskytter bedre mot temperatursvingninger på vinteren. Sanden må holdes noe fuktig gjennom vinteren. Rett før knopputspring på våren settes stiklingene i individuelle potter eller rottrenere. 
+      <p>
+        <img src="bilder/hardved1.gif" width="140" height="250" />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="bilder/hardved2.jpg" width="300" height="250" /><p>
+        
+      <p>
+      <b>Bladstikling</b><br />
+      Metode for å lage mange stiklinger av et skudd fra en semimoden grein til en busk eller en klatrebusk. En bladstikling krever bare en kort semimoden stamme.<p>
+      
+      1. Kutt av en grein med ønsket lengde. Antall stiklinger kan telles ut fra antall bladdskudd på greinen. <p>
+      2. Kutt til stiklingene: <p>
+      
+      <u>Knutepunktstiklinger</u><br />
+      Stiklingen fra busker og klatrere som er litt hule må ofte ha med et knutepunkt til et bladskudd i basen for å lykkes. På toppen kuttes det rett over et bladpar.<p>
+        
+    <u>Mellomknutepunktstiklinger</u><br />
+      Trenger ikke et bladskudd i basen på stiklingen. Kuttes også over et bladpar på toppen.<p> <img src="bilder/bladskuddstikling.jpg" width="253" height="199" /><img src="bilder/mkpstikling.jpg" width="226" height="223" /><p>
+      3. Stiklingen bør umiddelbart puttes i <a href="sfspiletre.html">rothormonveske</a>.<p>
+      4. Sett stiklingene i rotmedium slik at bladene så vidt stikker opp av jorda uten å berøre den.
+      <p>
+      5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Røtter bør dannes etter ca 8 uker.
+      <p>
+      <b>Stilktuppstikling av busker</b><br />
+      Når materialet har modnet såpass at mykvedstiklinger eller grønnvedstiklinger ikke lenger kan taes har gjerne greinen vekst på tuppen som har materiale som er helt mykt midt på sommeren. Denne tuppen egner seg godt som stiklingsmateriale for mange bladfellende busker og noen eviggrønne busker. Disse bør da lages som knutepunktstiklinger (Se over) siden mange arter ikke vil danne røtter som mellomknutepunktstiklinger. Kutt av 10 cm lang vekst og lag en stikling som for mykvedstikling av busk.
+      <p>
+      <b>Hælstikling</b><br />
+      For planter som har vanskelig for å danne røtter via stiklinger er hælestiklinger en fin metode. Hælen danner et område hvor de naturlige veksthormonene akkumuleres som i sin tur øker sannsyneligheten for rotdannelse. For trær benyttes metoden på trær med kraftig vekst på greinene som for eksempel hyll, eller litt eldre eller svakelige trær. Metoden er ikke så effektiv på bredbladete trær. Fungerer på alle typer vekst fra mykved til hardved for trær, fra alle typer vekst fra grønnved til hardved på busker og klatrere. 
+    
+      
+      For busker og klatrere benyttes et friskt sideskudd fra denne års vekst.
+        <p>
+      1. Riv av en grein fra stammen slik at en "hæl" med bark fra hovedstammen følger med. Sideskuddet bør være ca 10 cm langt for busker og klatrere. 
+      <p>
+      2. Fjern de nederste bladene og skjær av halen på hælen med en skarp og steril kniv. <p>
+        <img src="bilder/haelestikling.png" width="225" height="224" />
+        <p>
+      <strong>Klubbestiklinger</strong> <br />
+    1. Klubbestiklinger taes fra forrige års stamme - tidlig på sommeren for bladfellende planter, på høsten for eviggrønne. Velg ut et kort sideskudd med ny årsvekst (ca 10 cm langt), og kutt rett over og under sideskuddet på stammen - slik at stammen blir ca 1 cm lang. Stammen vil da se ut som en klubbe ved basen av stiklingen. <p>
+    2. Fjern de nederst bladene og den myke tuppen på stiklingen. Klubben skjæres tynnere hvis den er tykkere enn 5 mm. Deretter behandles stiklingen som en <a href="sfssemimoden.html">semimoden stikling</a>.<p>
+      <img src="bilder/klubbestikling.png" width="304" height="225" />
+    
+      
+      
+      <p>
+      <strong>Rotstiklinger</strong> <br />
+      Noen busker og trær kan formeres fra rotstiklinger. Korte deler av roten plantes på ny. Storrobinia er enkel å formere på denne måten
+    <p>
+      <h2>5- Poding</h2>
+      <p>To separate planter forenes så de fungerer som en. Rotsystemet, grunnstammen eller rotstokken til en plante forenes med toppveksten eller podekvisten. Selv om grunnstammen har stor innflytelse på podekvisten (f.eks størrelse og immunsystem) så opprettholdes de 2 delenes genetiske identitet. Hos eksempelvis frukttrær er det svært nyttig å benytte en grunnstamme som gir lav vekst, høy fruktproduksjon og godt immunsystem. Nært slekskap mellom delene er en forutsetning for å lykkes. I mange tilfeller kan etablerte unyttige trær i hagen omdannes til produktive frukttrær. Poding må skje raskt etter kutting slik at overflatene holdes fuktig. Streng hygiene og skarpe kniver er viktig. Kambiumlaget i begge deler må være i berøring fordi det er der broen mellom de to dannes. Varme temperaturer hjelper veksten. 
+        Vanligvis podes en podekvist på en 1-2 år gammel grunnstamme.
+      <p>
+      <strong>"Pisk og tunge"</strong> <br />
+      Denne teknikken benyttes på skudd som har en diameter på 5-15 mm.<p>
+      1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. 
+      <p>
+        2. Lagre podekvisten i vått avispapir i plastikkposer i kjøleskap til den skal podes. 
+      <p>
+      3. Kjøp grunnstammen hvis du trenger det.
+      <p>
+      4. Pod på et bekyttet sted fra februar til mai - avhengig av klimaet der du bor.
+      <p>
+      5. Lag et 2.5-5 cm langt skrånende kutt på podekvisten (pisken). Ideelt bør podekvisten ha 2-4 skudd, men ett skudd holder ofte.<p>
+      6. Lag et nytt kutt på podekvisten som starter 1/3 ned på det skrånede kuttet og kutt det neste parallelt med det skrånede kuttet (tungen).<p>
+      7. Lag identiske kutt på grunnstammen der diameter er helt lik som podekvisten.
+      <p>
+      <img src="bilder/pisktunge.jpg" width="250" height="200" /> <p>
+      8. Plasser tungene sammen og ta på podeteip. Podeteipen forhindrer at det tørker ut og gir ekstra støtte til såret heles. Fest teipen godt. 
+      <p>
+      9. Noen arter trenger varme på podestedet for at det skal heles. Epler trenger ingen hjelp. Plommer foretrekker rundt 20°C. Valnøtter trenger det enda varmere.
+      <p>
+      Podetreet settes ut og herdes ett år eller to før det plantes ut til sin permanente posisjon.
+      Pisk og tunge teknikken er vanskelig å få til. En podetang gjør en like god jobb som en profesjonell pisk og tunge utskjæring, og er et svært enkelt alternativ.
+    <p>Både podeteip og podetang finner du i <a href="skogshop.html">skogshopen</a> <p><br />
+
+    <strong>"Pisk"</strong> <br />
+    Metode for trær, busker og klatrere der grunnstammen har lik diameter som podekvisten. En semimoden eller hardved podekvist på 8-10 cm med et bladskudd i basen gis et hellende kutt på 2.5-3 cm i basen på motsatt side av bladskuddet. Grunnstammen på 2.5-8 cm gis et tilsvarende kutt. Kambiumlaget til de to møtes og festes med podeteip.
+    <p>
+      <img src="bilder/pisk.jpg" width="284" height="228" />
+    <p>
+
+
+    <strong>"Flis spiring"</strong> <br />
+    Denne teknikken gjøres i juli og august<p>
+    1- Kutt av spire av det du ønsker. Dette er ett friskt voksende skudd som kan tørke ut svært fort. Fjern alt bladverk og la bare en liten stilk sitte igjen. Hvis du ikke skal pode med engang må spiren lagres kaldt og fuktig.
+    <p>
+    2- Kutt &quot;flis&quot; av grunnstammen. Grunnstammen er ideelt 60-90 cm høy. Greiner under 30 cm fjernes. Fliskuttet gjøres omtrent 15 cm over bakken. Lag et 5mm dypt kutt (1). Deretter lager du et nytt skrånende kutt som starter 2.5-5 cm over det første kuttet. Kutt nedover til du møter det første kuttet. Fjern flisa (2).
+    <p>
+    3- Kutt en identisk flis av spiregreina der diameteren ideelt er den samme som på rotstokken hvor flisa er skjært ut. Velg et lite friskt skudd under bladstilken og lag et kort kutt lit over 1 cm under den og et skrånende kutt litt over 1 cm over den (3). Hold flisa i bladstilken og unngå å berøre treverket.
+    <p>
+    4- Plasser spireflisa (4) inn i kuttet på grunnstammen og fest med podeteip (5). Spiren vil oftest ligge i dvale til neste år, men kan begynne å spire på høsten. 
+    5- Kutt av grunnstammen rett over den nye spira vinteren etter at den har begynt å spire.
+    <p>
+      <img src="bilder/flisspiring.jpg" width="335" height="191" />
+    <p>
+    <p>
+      <strong>"Kløft poding"</strong> <br />
+      Eksisterende frukttrær kan podes om til en eller flere variasjoner. Viltvoksende trær kan podes om til et frukttre på våren. Vanlig <a href="Crataegus monogyana.html">viltvoksende hagtorn</a> kan eksempelvis podes med pærer, og <a href="Prunus spinosa.html">slåpetorn</a> kan podes med plommer.
+    <p>
+    1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. <p> 
+    2. Podes i april eller mai og er væravhengig. Podes når det er meldt en periode med varmt vær.<p>
+    3. Kutt av toppen av treet eller hovedgreinene slik at bare stubben står igjen. Optimal diameter på stubben eller hovedgreinene er mellom 4 og 7.5 cm som ogsp blir avgjørende for hvor kuttet bør være.<p>
+    4. Lag en kløft i senter av stubben eller greinen med en pode- eller beskjæringskniv, ved å slå på kniven ned i stubben med en hammer (b). Kløften bør være 7-10 cm dyp.<p>
+    5. Ta ut podekniven og press en flathodet skrutrekker ned i senter av kløften for å gi rom til podekvistene.<p>
+    6. Kutt til to podekvister for hver stubbe eller grein. På hver podekvist må det kuttes to skrånende kutt på ca 5 cm som lager en v form nederst på podekvisten (a). Hver podekvist bør ha 3-4 gode skudd.<p>
+    7. Før inn podekvistene på hver side av stubben eller greinen (c). Prøv å få innersiden av barken på stubben til å være på linje med yttersiden av barken til podekvisten. Jobb med skrutrekkeren for å få de godt nedi kløften<p>
+    8. Voks over eller bruk podeteip på hele kuttflaten på stubben eller greinen (d).<p>
+    9. Hvis podingen virker vil podekvistene begynne å vokse etter 2-3 uker. Vokser begge kan den ene kuttes av. Siden rotsystemet allerede er etablert vil podekvisten bære frukter allerede etter ett år eller to.<p> 
+      <img src="bilder/kloftpoding.GIF" width="285" height="201" />
+    <p> 
+    <strong>"Sidesammenføyning"</strong> <br />
+    Nyttig teknikk når rotstokken er større enn podekvisten. Teknikken benyttes rett før knopputspring sent på vinteren eller tidlig på våren. 2 år gamle grunnstammer formert fra frø med rett stamme og et godt rotsystem i en potte er ideelt.
+    <p>
+      1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. Podekvisten beskjæres til 15-25 cm rett ovenfor et knoppskudd og det er en stor fordel om basen av kvisten består av 2 års gammel vekst. Podekvisten gis også et skrått kutt på toppen.
+    <p>
+    2. Grunnstammen tas inn i et kaldt veksthus med en minimums nattemperatur på 7-10°C, 2-3 uker før podingen. Grunnstammen holdes tørr for å forhindre for mye strøm av sevje som kan ødelegge for foreningen med podekvisten.
+      <p>
+    3. Kutt av toppen av grunnstammen ca 8-10 cm over jorda. Lag et nedoverskrånende snitt ca 2.5 cm fra toppen. Lag et nytt nedoverskrånende kutt fra nær toppen av rotstokken som møter det innerste punktet på det første snittet (1).
+      <p>
+    4. Fjern strimmelen av ved og lag et nytt rett oppovergående kutt fra det møtepunktet mellom de to foregående kuttene (2). Man får da en flatsidet stamme med en skulder ved basen.<p>
+    5. Lag et svakt skrånende 2.5 cm langt kutt som ender nederst på podekvisten, et skudd bør være på motsatt side. Lag deretter et sterkt skrånende kutt fra motsatt side nederst på podekvisten (3). Poenget er at kuttene skal sammenfalle med kuttene på grunnstammen.
+    <p>
+    6. Putt podekvisten inn i grunnstammen (4) slik at kambiumlaget møtes. Dekk hele såret med podeteip.
+    <p>
+    7. Innen få uker vil en vellykket poding vise tegn til vekst, fjern eventuelle rotskudd. De vil avlede veksten bort fra podekvisten.
+    <p><img src="bilder/sidesammenfoyning.jpg" width="650" height="230" />
+    <p> 
+    <strong>"Sidebeleggsammenføyning"</strong> <br />
+    <p>  
+    Teknikk som benyttes på trær som  er vanskelige å forene eller som har en svært tynn bark. Til forskjell fra sidesammenføyningsteknikken så kuttes toppen av grunnstammen av etter at podekvisten har begynt å vokse på grunnstammen. Denne metoden benyttes rett for knoppskudd eller på midt- eller sensommer. Skal den gjøres på sommeren må podekvisten skjæres av på morgenen fra modnede årskudd, med basen fra toårsskudd.
+    <p>
+    1. Fjern bladene fra nederste 15 cm på grunnstammen.
+    <p>
+    2. Nær bunnen av grunnstammen lages et nedoverhellende kutt kvartveis inn i grunnstammen (3).
+    <p>
+    3. Lag et 3 cm langt flatt kutt nedover grunnstammen som møter enden av det første kuttet (2).
+    <p>
+    4. Fjern bladene fra de 5 nederste cm av podekvisten. Kutt den så den matcher kuttet på grunnstammen (1).
+    <p>
+    5. Sett sammen delene. Svært viktig at kambiumlagene møtes nøyaktig. <p>
+    6. Ta på podeteip rundt hele podesåret.<p>
+    7. Sett under plastikktelt eller tunnell med høy luftfuktighet.<p>
+    8. Kutt av toppen på grunnstammen over podingen når podekvisten viser tegn til vekst.
+    <p><img src="bilder/sidesbeleggammenfoyning.jpg" width="137" height="274" />
+    <p>På busker og klatrere fjernes de nederste bladene på en 10-13 cm podekvist. Sidesammenføyningskuttet lages 2.5 cm opp på grunnstammen. Selve kuttet er også på 2.5 cm. 
+    <p>
+    <strong>"Toppkile poding"</strong> <p/>
+    <u>Toppkile poding av trær</u><br />
+    Nyttig teknikk for noen trær som har større grunnstamme enn podekvist. 
+    <p>
+    1. Kutt av grunnstammen (ca 2 år gammel) over et skudd nær roten.
+    <p>
+    2. Lag et 2.5-5 cm dypt vertikalt kutt i senter av grunnstammen.
+    <p>
+    3. Kutt en podekvist med 3-4 knopper fra denne års vekst som er ca 15 cm lang. Lag to 2.5-5 cm lange hellende kutt i bunnen av podekviste slik at den lager en kile.<p>
+    4. Sett kilen inn i kuttet på grunnstammen. Begge kuttene på podekvisten bør være synlige over toppen av grunnstammen.
+    <p>
+    5. Ta på podeteip rundt hele podesåret.
+    <p>
+      <img src="bilder/toppkilepoding.gif" width="260" height="272" />
+    <p>  <u>Toppkile poding av busker og klatrere</u><br />
+    For de fleste busker og klatrere er toppkile poding den beste podemetoden. Den gir konsistent gode resultater og er lett å gjennomføre. 
+    <p>
+    1. Kutt en podekvist fra et modent skudd fra dette årets vekst, med gode og tette skudd på tuppen. 
+    <p>
+    2. 
+    Beskjær podekvisten til 10-15 cm med 4-6 bladskudd. Lag to 2-3 cm hellende kutt mot basen av podekvisten slik at den får form som et spyd. <p>
+    3. Kutt grunnstammen ned til 2.5 cm høyde. Lag et 2-3 cm dypt kutt i senter.
+    <p>
+    4. Dytt spydspissen av podekvisten ned i grunnstammekilen. Kambiumlaget mellom de to må møtes. 
+    <p>
+    5. Bind fast podingen med en tynn gummistrikk og ta på podeteip.
+    <p>
+</div>
+</div>
+
+<hr width="50%" style="margin: 5rem auto">
+
+<article style="width: 700px; margin: auto;">
+
+    <h1 id="Avleggere">Avleggere</h1>
+    <ul>
+      <li>
+        <h2 id="Enkle">Enkle Avleggere</h2>
+        <p>Hvis du trenger få nye planter så er denne metoden en enkel og rask metode som fungerer på en rekke planter. Fungerer best tidlig på våren og om høsten. Våren fungerer best for eviggrønne trær og høsten for bladfellende trær.<p>
+       <u>Enkle avleggere av klatrere</u>:
+          </p><p>
+       1. Velg et ungt lavtvoksende skudd på høsten. Fjern blader og sideskudd på minst 30 cm av stammen bak tuppen av skuddet.</p><p>
+       2. Lag et skrånende kutt på stammen (på motsatt side av skuddene eller undersiden, og midt mellom skuddene der stammen er helt bar) som er ca 2.5 cm langt - en tunge.</p><p>
+       3. Ta på <a href="sfspiletre.html">rothormonveske</a>. </p><p>
+       4. Stift ned stammen der stammen er bar, men såret ned. Ta 8 cm med jord over. Fest tuppen av skuddet på en pinne slik at det vokser oppover. </p><p>
+       5. Når det har kommet tilstrekkelig med røtter (vanligvis følgende høst), kuttes avleggeren av. </p><p>
+       <u>Enkle avleggere av busker:</u></p><p>
+       1. Merk plassen der den utvalgte greinen berører bakken med en pinne. Lag en hellende renne ned i jorda fra pinnen mot busken. Renna skal være ca 8 cm dyp. 
+       </p><p>
+       2. Stift greinen fast omtrent midt i renna. Bøy tuppen av greinen oppover og fest den på pinnen. Fyll renna med løs jord og vann godt.</p><p>
+       3. Greinen kan kuttes av stammen når røttene er godt etablert.
+       </p><p><img src="bilder/enkelavleggerbusk.gif" width="225" height="150">
+       </p><p>
+       <u>Enkle avleggere av trær:</u>
+       </p><p>
+       1. Merk plassen der den utvalgte greinen berører bakken med en pinne. Lag en hellende renne ned i jorda fra pinnen mot busken. Renna skal være ca 8-15 cm dyp. 
+       </p><p>
+       2. Velg et sterkt og friskt skudd fra forrige sesongs vekst. Lag et skadekutt 30 cm fra tuppen, på nedsiden av greina. Kutt av an barkstrimmel på 2.5-5 cm eller lag en tunge som du åpner med en fyrstikk.
+       </p><p>
+       3. Dypp i <a href="sfspiletre.html">rothormonveske</a> og hell også rothormonveske på jorda hvor greinen skal festes. Stift greinen fast på begge sider av såret i en dybde på 8-15 cm. Bøy tuppen av greinen oppover og fest den på pinnen. Fyll renna med løs jord og vann godt.
+       </p><p>
+       4. Greinen kan kuttes av stammen når røttene er godt etablert. Bladfellende trær bør kuttes av på høsten, mens eviggrønne bør kuttes av tidlig på våren. Bør vokse i potte i veksthus fra 2-5 år før den plantes ut.
+       </p><p> For mer info om avleggere se under <a href="formering.html">planteformering</a>.
+        </p><p>
+      </p></div>
+      </li>
+
+      <li>
+
+          <h2 id="Jordhaugavleggere">Jordhaugavleggere</h2> 
+          <p>Fin teknikk for eldre urteaktige stauder og busker. Miks litt jord med torv og sand på våren og bygg det opp rundt basen av planten på våren. Erstatt det hvis det vaskes bort av regn. Vann jevnlig. På seinsommeren har røtter dannet seg på flere av stilkene som kan kuttes av og dyrkes som individuelle planter.</p>
+          
+          
+       <p> For mer info om avleggere se under <a href="formering.html">planteformering</a>.
+         </p><p>
+      </p></div>
+
+      </li>
+
+      <li>
+
+           <h2 id="Luftavleggere">Luftavleggere</h2>
+          <p>En teknikk som benyttes på busker, trær eller klatrere som ikke har greiner som når bakken. Det er oftest best å lage luftavleggere på våren som kan plantes om individuelt på høsten eller påfølgende vår.</p> 
+            <p></p><table class="image" align="right">
+        <caption align="bottom">Luftavlegger</caption>
+        <tbody><tr>
+          <td><img src="bilder/luftavlegger.jpg" width="157" height="187" hspace="20" border="1" alt="Luftavlegger" align="right"></td></tr>
+        </tbody></table>
+          1. Velg et 1-2 år gammelt skudd som er rett og frodig (Årsskudd som har modnet litt for trær). Skjær av sideskudd og blader (ikke la stumpene sitte igjen) på ca 30 cm av greinen. 
+          <p>2. Skjær et 3 cm skrått kutt inn mot senter av greina - mot tuppen av et skudd. <a href="sfspiletre.html">Ta på rothormonveske</a>.Pakk inn såret med litt fuktig torvmose, også inni såret for å holde det åpent. (Trær kan også skades ved å skjære ut en 1-2.5 cm vid ring av bark).</p>
+          </p><p>
+          
+          
+          
+          3.Pakk inn såret med torvmosen forsiktig med svart plastikk og fest med teip i begge ender.</p><p>
+          4. Sjekk såret innimellom for å se etter rotdannelse. Vent til neste vår hvis rotdannelsen er svak
+          </p><p>
+          5. Når nye sterke røtter er dannet kan plastikken forsiktig fjernes. Kutt greine rett under rotballen, og fjern forsiktig overflødig mose. Luftavleggere av trær kuttes av i vinkel rett over et bladskudd og man fjerner litt toppvekst hvis det er mye for å stimulere rotveksten.
+          </p><p> For mer info om avleggere se under <a href="formering.html">planteformering</a>.
+          </p><p><br></p><p>
+          </p></div>
+
+      </li>
+
+      <li>
+
+        <h2 id="Slangeavleggere">Slangeavleggere</h2>
+        <p>Fin teknikk for mange klatrere, som lager lange skudd hvert år. På våren tar man en grein fra forrige års vekst ned på jorda. Blader og sideskudd fjernes. Man kan skade greinen mellom skuddene som for enkle avleggere for å fremskynde rotformasjon. Stift fast greinen mellom skuddene med såret vendt nedover og legg den som en slange (plassbesparende) bortover jorda. Ofte vil avleggerene ha tilstrekkelig med røtter til høsten og kan da behandles som selvlagde avleggere.</p>
+        <img src="bilder/slangeavlegger.jpg" width="225" height="150">
+        </p><p> For mer info om avleggere se under <a href="formering.html">planteformering</a>.
+        </p>
+
+      </li>
+
+    </ul>
+
+  <h1 id="Deling">Deling</h1>
+
+    <ul>
+      <li>
+        <h2 id="Delingenkeltskudd">Deling av enkeltskudd</h2>
+        <p>Noen arter kan deles i hvert lille skudd som dukker opp tidlig på våren. En god porsjon av rota må følge med hvert skudd, og man må legge litt arbeid i å lage minst mulig skade. Slike planter trenger i større grad beskyttelse etter deling fra vær og vind og nyter godt av å etablere seg i et veksthus.</p>
+        <p>For mer info om deling se under <a href="formering.html">planteformering</a></p>
+      </li>
+
+      <li>
+
+        <h2 id="Delingrotskudd">Deling av rotskudd</h2>
+        <p>Endel busker og trær lager rotskudd som kan deles fra hovedstammen. Dette bør ideelt gjøres tidlig på våren før planten begynner å vokse. Løft rotskuddet forsiktig med en hagegaffel for å se om skuddet har selvstendige røtter. I såfall kan det kuttes av nært inntil foreldreplanten. Del skuddene slik at hver hvert skudd har selvstendige røtter. Kutt av halvparten av toppveksten for å unngå vesketap. Bør vannes regelmessig til røttene har etablert seg.</p>
+        <p>
+          <img src="bilder/rotskudd.gif" width="250" height="121">
+        </p><p>
+          <u>Deling av busker med rotskudd</u>:
+          <br>
+          1. Løft en underjordisk grein tidlig på våren med en hagegaffel uten å forstyrre hovedplanten. Sjekk at det er fiberrike røtter på basen av rotskuddet.</p><p>
+          2. Kutt av rotskuddet med en beskjæringssaks nær foreldreplanten. Dytt forsiktig jord rundt foreldreplanten.</p><p>
+          3. Kutt hovedstammen på rotskuddet tilbake til de fiberrike røttene. Kutt vekk omtrent halvparten av toppveksten for å forhindre vesketap.</p><p>
+          4. Rotskuddet kan plantes direkte på ny plass eller pottes i veksthus hvis det er svakt.</p><p>For mer info om deling se under <a href="formering.html">planteformering</a>.
+        </p><p>
+
+      </li>
+      <li>
+
+        <h2 id="Delingtuer">Deling av tuer</h2>
+        <p>Deling av 1 plante til flere selvstendige planter. Denne metoden utnytter endel stauders hang til å produsere en tue av tett sammenvokste skudd. De har en klumpform som kan splittes eller deles opp til flere skudd med selvstendige røtter. Dette er raskt og enkelt, men gir bare noen få nye planter. Må ofte gjøres på våren når planten mangler løvverk som trenger vann. Dette er også en periode røttene lett  etablerer seg. Det er best å bruke en nensom hånd som river delene fra hverandre men man kan også bruke spade hvis delene er fysisk sammenvokste. Denne metoden fungerer ikke for stauder med pålerøtter. Noen få busker har klumformende røtter og kan deles som stauder. En enkel <a href="http://www.youtube.com/watch?v=FJeWah7Jonc&amp;feature=player_embedded" target="_blank">instruksjonsvideo for deling av stauder finner du her</a></p>
+        <p>For mer info om deling se under <a href="formering.html">planteformering</a>.
+  </p><p>
+
+      </li>
+    <ul>
+
+  <h1 id="Podeteknikker">Podeteknikker</h1>
+      
+      <ul>
+        <li>
+          <h2 id="#Flisspring">Flis spiring</h2>
+          Denne teknikken gjøres i juli og august<p>
+          1- Kutt av spire av det du ønsker. Dette er ett friskt voksende skudd som kan tørke ut svært fort. Fjern alt bladverk og la bare en liten stilk sitte igjen. Hvis du ikke skal pode med engang må spiren lagres kaldt og fuktig.
+          </p><p>
+          2- Kutt "flis" av grunnstammen. Grunnstammen er ideelt 60-90 cm høy. Greiner under 30 cm fjernes. Fliskuttet gjøres omtrent 15 cm over bakken. Lag et 5mm dypt kutt (1). Deretter lager du et nytt skrånende kutt som starter 2.5-5 cm over det første kuttet. Kutt nedover til du møter det første kuttet. Fjern flisa (2).
+          </p><p>
+          3- Kutt en identisk flis av spiregreina der diameteren ideelt er den samme som på grunnstammen hvor flisa er skjært ut. Velg et lite friskt skudd under bladstilken og lag et kort kutt lit over 1 cm under den og et skrånende kutt litt over 1 cm over den (3). Hold flisa i bladstilken og unngå å berøre treverket.
+          </p><p>
+          4- Plasser spireflisa (4) inn i kuttet på grunnstammen og fest med podeteip (5). Spiren vil oftest ligge i dvale til neste år, men kan begynne å spire på høsten. 
+          5- Kutt av grunnstammen rett over den nye spira vinteren etter at den har begynt å spire.
+          </p><p>
+            <img src="bilder/flisspiring.jpg" width="335" height="191">
+          </p><p>
+            For mer info om poding se under <a href="formering.html">planteformering</a>.
+          </p><p>
+        </li>
+
+        <li>
+          <h2 id="Kloftpoding">Kløft poding</h2>
+            Eksisterende frukttrær kan podes om til en eller flere variasjoner. Viltvoksende trær kan podes om til et frukttre på våren. Vanlig <a href="Crataegus monogyana.html">viltvoksende hagtorn</a> kan eksempelvis podes med pærer, og <a href="Prunus spinosa.html">slåpetorn</a> kan podes med plommer.
+          <p>
+          1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. </p><p> 
+          2. Podes i april eller mai og er væravhengig. Podes når det er meldt en periode med varmt vær.</p><p>
+          3. Kutt av toppen av treet eller hovedgreinene slik at bare stubben står igjen. Optimal diameter på stubben eller hovedgreinene er mellom 4 og 7.5 cm som ogsp blir avgjørende for hvor kuttet bør være.</p><p>
+          4. Lag en kløft i senter av stubben eller greinen med en pode- eller beskjæringskniv, ved å slå på kniven ned i stubben med en hammer (b). Kløften bør være 7-10 cm dyp.</p><p>
+          5. Ta ut podekniven og press en flathodet skrutrekker ned i senter av kløften for å gi rom til podekvistene.</p><p>
+          6. Kutt til to podekvister for hver stubbe eller grein. På hver podekvist må det kuttes to skrånende kutt på ca 5 cm som lager en v form nederst på podekvisten (a). Hver podekvist bør ha 3-4 gode skudd.</p><p>
+          7. Før inn podekvistene på hver side av stubben eller greinen (c). Prøv å få innersiden av barken på stubben til å være på linje med yttersiden av barken til podekvisten. Jobb med skrutrekkeren for å få de godt nedi kløften</p><p>
+          8. Voks over eller bruk podeteip på hele kuttflaten på stubben eller greinen (d).</p><p>
+          9. Hvis podingen virker vil podekvistene begynne å vokse etter 2-3 uker. Vokser begge kan den ene kuttes av. Siden rotsystemet allerede er etablert vil podekvisten bære frukter allerede etter ett år eller to.</p><p> 
+            <img src="bilder/kloftpoding.GIF" width="285" height="201">
+          </p><p>
+        </li>
+
+        <li>
+          <h2 id="Pisk">Pisk</h2> 
+          Metode for trær, busker og klatrere der grunnstammen har lik diameter som podekvisten. En semimoden eller hardved podekvist på 8-10 cm med et bladskudd i basen gis et hellende kutt på 2.5-3 cm i basen på motsatt side av bladskuddet. Grunnstammen på 2.5-8 cm gis et tilsvarende kutt. Kambiumlaget til de to møtes og festes med podeteip.
+              <p>
+            <img src="bilder/pisk.jpg" width="284" height="228">
+          </p><p>For mer info om poding se under <a href="formering.html">planteformering</a>.
+          </p><p>
+        </li>
+
+        <li>
+          <h2 id="Pisktunge">Pisk og tunge</h2>
+ 
+          Pisk og tunge teknikken benyttes på skudd som har en diameter på 5-15 mm.
+            <p>
+          1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. </p><p>
+            2. Lagre podekvisten i vått avispapir i plastikkposer i kjøleskap til den skal podes. 
+          </p><p>
+          3. Kjøp grunnstammen hvis du trenger det.
+          </p><p>
+          4. Pod på et bekyttet sted fra februar til mai - avhengig av klimaet der du bor.
+          </p><p>
+          5. Lag et 2.5-5 cm langt skrånende kutt på podekvisten (pisken). Ideelt bør podekvisten ha 2-4 skudd, men ett skudd holder ofte.</p><p>
+          6. Lag et nytt kutt på podekvisten som starter 1/3 ned på det skrånede kuttet og kutt det neste parallelt med det skrånede kuttet (tungen).</p><p>
+          7. Lag identiske kutt på grunnstammen der diameter er helt lik som podekvisten.
+          </p><p>
+          <img src="bilder/pisktunge.jpg" width="250" height="200"> </p><p>
+          8. Plasser tungene sammen og ta på podeteip. Podeteipen forhindrer at det tørker ut og gir ekstra støtte til såret heles. Fest teipen godt. 
+          </p><p>
+          9. Noen arter trenger varme på podestedet for at det skal heles. Epler trenger ingen hjelp. Plommer foretrekker rundt 20°C. Valnøtter trenger det enda varmere.
+          </p><p>
+          Podetreet settes ut og herdes ett år eller to før det plantes ut til sin permanente posisjon.
+          Pisk og tunge teknikken er vanskelig å få til. En podetang gjør en like god jobb som en profesjonell pisk og tunge utskjæring, og er et svært enkelt alternativ.
+        </p><p>Både podeteip og podetang finner du i <a href="skogshop.html">skogshopen</a> </p><p>
+        For mer info om poding se under <a href="formering.html">planteformering</a>.
+        </p><p>
+        </li>
+
+        <li>
+          <h2 id="Sidesammenfoyning">Sidesammenføyning</h2>
+          Nyttig teknikk når grunnstammen er større enn podekvisten. Teknikken benyttes rett før knopputspring sent på vinteren eller tidlig på våren. 2 år gamle grunnstammer formert fra frø med rett stamme og et godt rotsystem i en potte er ideelt.
+              <p>
+            1. Kjøp eller kutt en podekvist i desember eller januar. Podekvisten er forrige sesongs vekst fra treet du ønsker. Podekvisten må kuttes av når treet er i full dvale. Podekvisten beskjæres til 15-25 cm rett ovenfor et knoppskudd og det er en stor fordel om basen av kvisten består av 2 års gammel vekst. Podekvisten gis også et skrått kutt på toppen.
+              </p><p>
+          2. Grunnstammen tas inn i et kaldt veksthus med en minimums nattemperatur på 7-10°C, 2-3 uker før podingen. Grunnstammen holdes tørr for å forhindre for mye strøm av sevje som kan ødelegge for foreningen med podekvisten.
+            </p><p>
+          3. Kutt av toppen av grunnstammen ca 8-10 cm over jorda. Lag et nedoverskrånende snitt ca 2.5 cm fra toppen. Lag et nytt nedoverskrånende kutt fra nær toppen av grunnstammen som møter det innerste punktet på det første snittet (1).
+            </p><p>
+          4. Fjern strimmelen av ved og lag et nytt rett oppovergående kutt fra det møtepunktet mellom de to foregående kuttene (2). Man får da en flatsidet stamme med en skulder ved basen.</p><p>
+          5. Lag et svakt skrånende 2.5 cm langt kutt som ender nederst på podekvisten, et skudd bør være på motsatt side. Lag deretter et sterkt skrånende kutt fra motsatt side nederst på podekvisten (3). Poenget er at kuttene skal sammenfalle med kuttene på grunnstammen.
+          </p><p>
+          6. Putt podekvisten inn i grunnstammen (4) slik at kambiumlaget møtes. Dekk hele såret med podeteip.
+          </p><p>
+          7. Innen få uker vil en vellykket poding vise tegn til vekst, fjern eventuelle rotskudd. De vil avlede veksten bort fra podekvisten.
+          </p><p><img src="bilder/sidesammenfoyning.jpg" width="650" height="230"></p><p>
+          For mer info om poding se under <a href="formering.html">planteformering</a>.
+
+          </p>
+        </li>
+
+        <li>
+          <h2 id="Toppkilepoding">Toppkile poding</h2>
+          Nyttig teknikk for noen trær som har større grunnstamme enn podekvist. 
+              <p>
+          1. Kutt av grunnstammen (ca 2 år gammel) over et skudd nær roten.
+              </p><p>
+          2. Lag et 2.5-5 cm dypt vertikalt kutt i senter av grunnstammen.
+              </p><p>
+          3. Kutt en podekvist med 3-4 knopper fra denne års vekst som er ca 15 cm lang. Lag to 2.5-5 cm lange hellende kutt i bunnen av podekviste slik at den lager en kile.</p><p>
+          4. Sett kilen inn i kuttet på grunnstammen. Begge kuttene på podekvisten bør være synlige over toppen av grunnstammen.
+          </p><p>
+          5. Ta på podeteip rundt hele podesåret.</p><p>
+            <img src="bilder/toppkilepoding.gif" width="260" height="272">
+          </p><p> For mer info om poding se under <a href="formering.html">planteformering</a>.
+          </p>
+        </li>
+      </ul>
+
+
+      <h1 id="Stiklinger">Stiklinger</h1>
+
+      <ul>
+        <li>
+          <h2 id="Blad">Bladstikling</h2>
+          <strong>Bladstikling av staude</strong><br>
+            Noen planter kan danne både røtter og skudd fra deler av blad eller hele bladet. <p>
+            
+            <u>Delbladstiklinger</u><br>
+           1.  Stiklinger laget av deler av bladet kuttes i to deler der bladets vener får et sår på hver side av midtnerven som kastes. 
+            </p><p>
+           2. Bladdelen plasseres i et veldrenert rotmedium med kuttsiden ned. Pakk jorden rundt basen av stiklingen. Sett i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet.
+            </p><p>
+         <u>Helbladstiklinger</u><br>
+           1. Kutt et sterkt og frist blad fra foreldreplanten nær basen av bladstilken. Sett i potte med en del sand og en del torv slik at basen av bladet akkurat berører rotmediet.
+            </p><p>
+           2. Vann godt og sett i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Beskytt mot direkte sollys.</p><p>
+          
+          <strong>Bladstikling av busker</strong><br>
+           Metode for å lage mange stiklinger av et skudd fra en semimoden grein til en busk eller en klatrebusk. En bladstikling krever bare en kort semimoden stamme.</p><p>
+           
+           1. Kutt av en grein med ønsket lengde. Antall stiklinger kan telles ut fra antall bladdskudd på greinen. </p><p>
+           2. Kutt til stiklingene: </p><p>
+           
+           <u>Knutepunktstiklinger</u><br>
+           Stiklingen fra busker og klatrere som er litt hule må ofte ha med et knutepunkt til et bladskudd i basen for å lykkes. På toppen kuttes det rett over et bladpar.</p><p>
+             
+         <u>Mellomknutepunktstiklinger</u><br>
+           Trenger ikke et bladskudd i basen på stiklingen. Kuttes også over et bladpar på toppen.</p><p> <img src="bilder/bladskuddstikling.jpg" width="253" height="199"><img src="bilder/mkpstikling.jpg" width="226" height="223"></p><p>
+           3. Stiklingen bør umiddelbart puttes i <a href="sfspiletre.html">rothormonveske</a>.</p><p>
+           4. Sett stiklingene i rotmedium slik at bladene så vidt stikker opp av jorda uten å berøre den.
+           </p><p>
+           5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Røtter bør dannes etter ca 8 uker.
+           
+           </p>
+        </li>
+
+        <li>
+          <h2 id="#Grønnved">Grønnvedstiklinger</h2>
+          <u>Grønnvedstiklinger av busker og klatrere</u><br>
+          Som for mykvedstiklinger, men taes noe seinere på sommeren. Ofte er det vanskelig å se forskjell på plantematerialet, men det er kun noen få arter hvor forskjellen har stor betydning for å lykkes.
+          <p>
+          <u>Grønnvedstiklinger av trær</u><br></p><table class="image" align="right">
+        <caption align="bottom">Grønnvedstikling av tre</caption>
+        <tbody><tr>
+          <td><img src="bilder/gronnvedstikling.jpg" width="307" height="327" hspace="20" border="1" alt="Grønnvedstikling" align="right"></td></tr>
+        </tbody></table>
+          Grønnvedstiklinger taes når stammen på årsskuddet er litt fastere og mørkere enn på mykvedstiklingen. Dette er i perioden fra seint på våren til midtsommeren.
+          <p>
+          1. Skjær av et 25-30 cm langt årsskudd i foreningen mellom årets og fjordårets vekst. 
+          </p><p>
+          2. Fjern tuppen av skuddet rett ovenfor et bladskudd. Fjern bladet nærmest basen og lag et skadekutt (strimmel av bark) på 2.5 cm. Større blader kuttes i to for å minske vesketap. En ferdiglaget stikling bør være 8-10 cm lang med 3 bladkudd. </p><p>
+          3. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+          </p><p>
+          4. Sett i individuelle potter eller rottrenere med 1 del perlite, fin sand eller vermiculitt og 1 del torv.  Vann mye.
+          </p><p>
+          5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. </p><p></p><p><br></p><p><br>
+          </p>
+        </li>
+
+        <li>
+          <h2 id="Hardved">Hardvedstiklinger</h2>
+  
+          <u>Hardvedstiklinger av busker og klatrere</u><br>
+          Fremgangsmåten for bladfellende og eviggrønne planter er noe forskjellig. Stiklinger fra begge egner seg best på seinhøsten til midtvinters, når årsveksten har vokst fullt ut og når de bladfellende plantene har begynt å miste blader eller mistet bladene helt. Hardvedstiklinger er langt større enn stiklinger fra mykved og semimodne busker. Grunnen til det er at de danner røtter langt seinere så trenger de større matreserver å ta av for å overleve vinteren. <p>
+          <em>Bladfellende</em>:<br>
+          
+        1. Lag en stikling som er ca 20 cm lang. Fjern gjenværende blader. Lag et horisontalt kutt rett under et bladskudd og et skrått kutt fra skuddet på toppen. Tuppen av greiner og greinmateriale helt ved basen av stammen er uegnet materiale for hardvedstiklinger. Er det en art som har vanskelig for å lage røtter vil det hjelpe å lage et  skadekutt (strimmel av bark) på 1-2 cm ved basen av stiklingen.
+          </p><p>
+        2. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+          </p><p>
+        3. Sett i jordbasert rotmedium. Må være ekstremt veldrenert (mye sand hjelper) ellers dør stiklingen. Kun 5 cm av toppen av stiklingen skal være synlig. Pakk jorden og vann godt. Fjern ugress umiddelbart hvis det dukker opp.</p><p>
+        4. Røtter dannes seint, slik at når bladene spirer på våren er det viktig å vanne godt fordi de kan tørke fort ut på grunn av et spinkelt rotsystem.</p><p>
+        
+        <em>Eviggrønn</em>:<br>
+        1. Kutt skuddene i 20-25 cm lange seksjoner. Lag kuttet rett nedenfor et bladskudd nederst og rett over et bladskudd øverst. Fjern blader og sideskudd fra nederste halvdel av stiklingen.</p><p>
+        2. Sett 5- 8 stiklinger i en potte slik at kun den øverste halvdelen er synlig. Røtter dannes normalt etter 6-10 uker hvis bunnhete benyttes. Plasttunnel for å øke luftfuktighet er også fordelaktig.
+         
+         </p><p>
+          <u>Hardvedstiklinger av trær</u><br>
+          En av de aller enkleste måtene å formere bladfellende trær på. 
+          Stiklinger fra hardved taes i treets dvaleperiode, normalt seint på høsten rett etter bladfelling, eller tidlig på våren rett før knoppskudd. Jorda er da  varm og gir et godt grunnlag for rotdannelse. Hardvedstiklinger kan i mange tilfelle også taes i løpet av hele vinteren. Disse stiklingene tas fra greiner med en diameter på 0.6 til 1.5 cm, med det laveste kuttet rett under et bladskudd og det øverste kuttet rett over et bladskudd. Lengden på stiklingen er normalt 15-30 cm. Stiklingen bør umiddelbart puttes i <a href="sfspiletre.html">rothormonveske</a> og deretter i sand, med 5 cm av greinen stikkende opp av sanden.
+          
+          Man kan også lage en bunt med opptil 10 stiklinger. Sand helt uten jord beskytter bedre mot temperatursvingninger på vinteren. Sanden må holdes noe fuktig gjennom vinteren. Rett før knopputspring på våren settes stiklingene i individuelle potter eller rottrenere. 
+          </p><p>
+            <img src="bilder/hardved1.gif" width="140" height="250">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="bilder/hardved2.jpg" width="300" height="250"></p><p>
+             
+          
+          </p>
+        </li>
+
+        <li>
+                    
+        <h2 id="Hæl">Hælstikling</h2>
+        For planter som har vanskelig for å danne røtter via stiklinger er hælestiklinger en fin metode. Hælen danner et område hvor de naturlige veksthormonene akkumuleres som i sin tur øker sannsyneligheten for rotdannelse. For trær benyttes metoden på trær med kraftig vekst på greinene som for eksempel hyll, eller litt eldre eller svakelige trær. Metoden er ikke så effektiv på bredbladete trær. Fungerer på alle typer vekst fra mykved til hardved for trær, fra alle typer vekst fra grønnved til hardved på busker og klatrere.
+        
+        For busker og klatrere benyttes et friskt sideskudd fra denne års vekst.
+          <p>
+        1. Riv av en grein fra stammen slik at en "hæl" med bark fra hovedstammen følger med. Sideskuddet bør være ca 10 cm langt for busker og klatrere. 
+        </p><p>
+        2. Fjern de nederste bladene og skjær av halen på hælen med en skarp og steril kniv. </p><p>
+          <img src="bilder/haelestikling.png" width="225" height="224">
+        
+        </p>
+        </li>
+
+        <li>
+          <h2 id="Klubbe">Klubbestiklinger</h2> 
+          1. Klubbestiklinger taes fra forrige års stamme - tidlig på sommeren for bladfellende planter, på høsten for eviggrønne. Velg ut et kort sideskudd med ny årsvekst (ca 10 cm langt), og kutt rett over og under sideskuddet på stammen - slik at stammen blir ca 1 cm lang. Stammen vil da se ut som en klubbe ved basen av stiklingen. <p>
+          2. Fjern de nederst bladene og den myke tuppen på stiklingen. Klubben skjæres tynnere hvis den er tykkere enn 5 mm. Deretter behandles stiklingen som en <a href="sfssemimoden.html">semimoden stikling</a>.</p><p>
+            <img src="bilder/klubbestikling.png" width="304" height="225">
+        </li>
+
+        <li>
+          <h2 id="Mykved">Mykvedstiklinger</h2>
+  
+  
+          <u>Mykvedstiklinger av busker og klatrere</u><br><table class="image" align="right">
+        <caption align="bottom">Mykvedstikling av busk</caption>
+        <tbody><tr>
+          <td><img src="bilder/mykvedbusk.jpg" width="257" height="227" hspace="20" border="1" alt="Mykvedstikling" align="right"></td></tr>
+        </tbody></table>
+          Mykvedstiklinger fra busker og klatrere taes på våren og tidlig på sommeren. <p>
+          1. Lag en stikling med 2-3 bladpar. Kutt rett under et bladskudd. 
+          </p><p>
+          2. Fjern den myke tuppen rett over et bladskudd, og fjern det nederste bladparet. At tuppen fjernes fremmer at planten ikke vokser defra men i basen slik at den lager en buskaktig vekst fra starten av. I tillegg så redistribueres vekshormoner til basen av stiklingen som sikrer bedre rotvekst. Kutt også store blader i 2 for å redusere vesketapet. Stammen på stiklingen bør være ca 4-5 cm.
+          </p><p>
+          3. Mykvedstiklinger må puttes varsomt ned i rotmedium, en priklipinne eller penn er fin å bruke for å lage hull og pakke jord rundt. Bladene skal være rett over jorden og ikke være i berøring med hverandre.</p><p>
+          4. Vann godt plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Stiklingene bør stå noe skyggefullt.
+         
+          </p><p>
+          <u>Mykvedstiklinger av trær</u><br>
+          Mykvedstiklinger taes normalt seint på våren fra de rasktvoksende tuppene av nye årsskudd. Denne type stiklinger danner ofte røtter svært raskt. De bør taes tidlig på morgenen og settes raskt i  rotmedium siden de tørker ut raskt. 
+          </p><p>
+          1. Skjær av et 5-8 cm langt, mykt skudd. Kutt i foreningen mellom årets og fjordårets vekst. Er skuddet lenger enn 8 cm fjernes tuppen av skuddet (Dette for å lede veksthormonene mot basen  til stiklingen).
+          </p><p>
+          2. Sett i <a href="sfspiletre.html">rothormonveske</a>.</p><p>
+          3. Sett i individuelle potter eller rottrenere med 1 del perlite, fin sand eller vermiculitt og 1 del torv. Alternativt kan man benytte rockwool som rotmedium. Vann mye.</p><p>
+          4. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. </p><p>
+          5. Fjern døde eller syke blader med jevne mellomrom. </p><p>
+          6. Røtter dannes normalt etter 6-10 uker og planten er normalt klar til å plantes ut etter 2-3 år.
+          
+          </p>
+        </li>
+
+        <li>
+          <h2 id="Rotstikling">Rotstikling</h2>
+            <u>Rotstikling av staude</u><br>
+          Rotstiklinger er best å ta i plantens dvaleperiode tidlig på vinteren. En tommelfingerregele er at jo tynnere stiklingen er dess lenger bør den være. Svært tynne rotstiklinger bør dessuten plantes horisontalt. Rotstiklinger må beskyttes mot kulde og må ikke utsettes for kuldegrader. Ekstra tynne stiklinger bør ikke utsettes for temperaturer under 7°C.
+          <p>
+          1- Vask roten fri for jord og kutt den sterkste delen av rota så nær kronen som mulig. Ikke fjern mer enn 1/3 av røttene fra foreldreplanten.
+          </p><p>
+          2. Kutt hver seksjon i 5-13 cm lange biter (tynnest lengst). For å være sikker på at den er riktig vei kutt bunnen av stiklingen i skrå vinkel.</p><p>
+          3. Lag hull til stiklingene i rotmediet, toppen av stiklingen skal være på linje med jordoverflaten.
+          </p><p>
+          4. Dryss ett 1 cm lag med fin sand på toppen og sett på et beskyttet sted. Sentvoksende planter danner lettere røtter med bunnvarme. Vann kun for å forhindre uttørking inntil rotdannelse er synlig på våren.
+
+
+
+          Rotstiklinger produserer gjerne et sett med nye skudd før røttene dannes.
+            </p><p> <u>Rotstikling av busker, klatrere og trær</u><br> 
+          Noen busker, klatrere og trær kan formeres fra rotstiklinger. Korte deler av roten plantes på ny. 
+            </p>
+        </li>
+
+        <li>
+            
+          <h2 id="Semimoden">Semimoden stiklinger</h2>
+          <u>Semimodne stiklinger av busker og klatrere</u><br>
+          Fin teknikk for å lage stiklinger av en rekke busker og klatrere - eviggrønne som bladfellende. Semimodne stiklinger taes av årsskudd fra midtsommeren til tidlig på høsten når de har blitt mørke og hardvedaktige. 
+          <p>
+          1. Ta et årsskudd som er myk på tuppen og fremdeles i aktiv vekst, men som har en hardnet stamme. Lengden på stiklingen kommer litt an på vekstvanen til planten, men 6-10 cm er passende lengde på de fleste. Kutt av med en beskjæringssaks. 
+          </p><p>
+          2. Skjær av alle sideskudd og beskjær dem til 10-15 cm lengde ved å kutte rett under et bladskudd. Fjern det nederste bladparet og den myke tuppen
+          </p><p>
+          3. Lag et skadekutt (strimmel av bark) på 1-2 cm ved basen av stiklingen.
+          </p><p>
+          4. Sett i <a href="sfspiletre.html">rothormonveske</a>.
+          </p><p>
+          5. Sett stiklingene i potter med en miks av 1 del torv og 1 del fin bark eller perlitt. Alternativt kan rockwool benyttes. Pakk jorda rundt stiklingen og vann.
+          </p><p>
+           6. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Gråbladete planter skal ha noe mindre luftfuktighet </p><p>
+          7. Fjern døde eller syke blader med jevne mellomrom. </p><p>
+          8. Røtter dannes normalt i løpet av høsten eller vinteren, men trenger normalt en vekstsesong til med gradvis herding før den plantes ut.
+          
+          </p><p>
+          
+          
+          <u>Semimodne stiklinger av trær</u><br></p><table class="image" align="right">
+        <caption align="bottom">Semimoden stikling av tre</caption>
+        <tbody><tr>
+          <td><img src="bilder/semimoden.jpg" width="227" height="247" hspace="20" border="1" alt="Semimoden stikling" align="right"></td></tr>
+        </tbody></table>
+          Fin teknikk for å lage stiklinger av bredbladete eviggrønne trær og mange nåletrær. Semimodne stiklinger taes av årsskudd seint på sommeren eller tidlig på høsten når de har blitt mørke og hardvedaktige. 
+          <p>
+          1. Ta et årsskudd som er myk på tuppen, men som har en hardnet stamme. Kutt en 10-15 cm lang stikling rett over skudd med en beskjæringssaks. 
+          </p><p>
+          2. Fjern alle blader bortsett fra de to øverste som kuttes i to. Dette kuttet må gjøres med en skarp og steril kniv, og det gjøres for å hindre vesketap. Lag et skadekutt (strimmel av bark) på 3 cm ved basen av stiklingen.</p><p>
+          3. Sett i <a href="sfspiletre.html">rothormonveske</a>.</p><p>
+          4. Sett stiklingene i potter med en miks av 1 del torv og 1 del fin bark. Alternativt kan rockwool benyttes. Stiklingen skal bare settes langt nok ned til at den står oppreist av seg selv. Pakk jorda rundt stiklingen og vann.</p><p>
+           5. Plasser i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. </p><p>
+          6. Fjern døde eller syke blader med jevne mellomrom. </p><p>
+          7. Røtter dannes normalt i løpet av høsten eller vinteren.
+          </p><p>
+          
+         <u>Semimodne stiklinger av nåletrær og nålebusker</u><br>
+         Likner metoden for bladfellende trær, men med noen vesentlige forskjeller. Mange nåletrær lager ny vekst fra spesialiserte skudd: Toppskudd eller hoveskudd har en tendens til å vokse vertikalt, sideskudd horisontalt. Stiklinger fra sideskudd vil hos mange nåletrær ikke vokse som hovedskudd, men det finnes unntak. 
+           </p><p>Fra tidlig høst til midt på høsten, samt midtvinters, er sannsyneligheten for rotdannelse størst.
+          Rotmedium må være veldrenert - 1 del torv, perlitt eller vermiculitt blandet med 1 del sand. Trenger stiklingene høy luftfuktighet benytttes 2/3 sand. Ikke pakk rotmediet. Stiklinger taes oftest fra fjordårsvekst som også vil avgjøre lengden på stiklingen. Sideskudd og nåler fjernes fra den nederste tredjedelen av stiklingen. De små sårene som sitter igjen fremmer rotdannelse. Sett i <a href="sfspiletre.html">rothormonveske</a>. Vann veldig forsiktig. Røtter dannes normalt innen 3 måneder. Tåler ikke frost. Danner røtter fortere med bunnhete på ca 20°c.</p><p>
+          
+          For mer info om stiklinger se under <a href="formering.html">planteformering</a>.
+          </p>
+
+        </li>
+
+        <li>
+          <h2 id="Silkbase">Stilkbasestikling</h2>
+          <p><u>Stilkbasestikling av staude</u><br>
+           Populær metode fordi stiklingene raskt vokser til fullvoksne planter og er derfor maksimalt utrustet mot en kald vinter. Et velegnet rotmedium er en del torv blandet med en del sand. Bør beskyttes mot direkte sollys på varme sommerdager.</p><p>
+           1. Når nye skudd kommer fra basen av en staude som har blitt 8-10 cm høy på våren, kuttes det nye skuddet av helt inntil basen av stauden. </p><p>
+           2. Fjern nederste blader og kutt av rett under et bladskudd slik at stiklingen blir 5 cm lang. </p><p>
+           3. Putt i <a href="sfspiletre.html">rothormonveske</a>.
+           </p><p>
+           4. Sett i rotmedium. Vann godt og plassér i veksttunnel, plasttelt eller liknende som danner et klima med høy luftfuktighet. Bunnhete får fart på rotutviklingen.</p><p>
+           5. Når rotdannelsen er godt i gang etter ca 4 uker kan stiklingene pottes om i individuelle potter.
+           
+           
+          </p>
+        </li>
+
+        <li>
+          <h2 id="Stilkstikling">Stilkstikling</h2>
+          <u>Stilkstikling av staude</u><br>
+          Noen langstammende stauder kan deles i 5-8 cm lange seksjoner. Toppen av hver stikling kuttes rett over et blad, og basen rett under et blad. Fjern nederste blad eller fler blad hvis det er mange blad på stammen - nok til at stammen er bar der den er i kontakt med rotmediet. Behandles videre som stilktuppstiklinger.<p> For mer info om stiklinger se under <a href="formering.html">planteformering</a>.
+          </p>
+        </li>
+
+        <li>
+          <h2 id="Stilktupp">Stilktuppstikling</h2>
+          <u>Stilktuppstikling av staude</u><br>
+          <p>Rockwool og vermiculitt fungerer bra som rotmedium for stilktuppstiklinger.</p>
+          
+          Stiklinger fra vår- og forsommervekst har myk vekst og er svært skjøre og brekker hvis de bendes eller klemmes for hardt. De danner ofte røtter innen to uker. Seinsommerstiklinger tåler langt mer, men er sårbare for kuldeperioder tidlig på høsten. Seinsommerstiklinger bruker 4-8 uker på å danne røtter. <p>
+          1. Velg vekst med tette og kraftige bladskudd. Kutt rett under et bladskudd 8-13 cm under tuppen av skuddet. Kutt av med kniv, ikke saks.</p>
+          2. Putt i plastpose til de kan forbredes. Skjær av de nederste bladene med kniv. </p><p>
+          3. Lag hull i rotmedium med en prikklepinne eller liknende og sett i stiklingene med de laveste bladparet rett over overflaten. Pakkvarsomt rundt stiklingen og vann.
+          4. Plasser i veksttunnel eller liknende som gir et miljø med høy luftfuktighet. De skal stå i gode lysforhold med en minimumstemperatur på 18°C. </p><p>
+          5. Er stiklingene plantet i rockwool må de ikke fjernes fra rotmediet når de har dannet røtter men plantes om med rotmediet.
+          </p><p> <u>Stilktuppstikling av busker</u><br>
+          Når materialet har modnet såpass at <a href="sfsmykved.html">mykvedstiklinger</a> eller <a href="sfsgronnved.html">grønnvedstiklinger</a> ikke lenger kan taes har gjerne greinen vekst på tuppen som har materiale som er helt mykt midt på sommeren. Denne tuppen egner seg godt som stiklingsmateriale for mange bladfellende busker og noen eviggrønne busker. Disse bør da lages som knutepunktstiklinger  siden mange arter ikke vil danne røtter som mellomknutepunktstiklinger. Kutt av 10 cm lang vekst og lag en stikling som for mykvedstikling av busk.
+
+          
+          </p>
+        </li>
+
+      </ul>
+
+</article>
+
+  <!-- JUST FOR PADDING PURPOSES -->
+  <span style="color: transparent;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat consectetur in! Exercitationem eaque tempore fugiat deleniti? Nisi nihil ea nostrum dolores, delectus quos minus ipsum quaerat perferendis, omnis modi.</span>
+  <span style="color: transparent;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat consectetur in! Exercitationem eaque tempore fugiat deleniti? Nisi nihil ea nostrum dolores, delectus quos minus ipsum quaerat perferendis, omnis modi.</span>
+  <span style="color: transparent;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat consectetur in! Exercitationem eaque tempore fugiat deleniti? Nisi nihil ea nostrum dolores, delectus quos minus ipsum quaerat perferendis, omnis modi.</span>
+  <span style="color: transparent;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error placeat consectetur in! Exercitationem eaque tempore fugiat deleniti? Nisi nihil ea nostrum dolores, delectus quos minus ipsum quaerat perferendis, omnis modi.</span>
+  <!-- END PADDING -->
+
+  
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-content">
+      <a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" style="padding-bottom: 2.5rem" width="300px" alt="efferus_logo"/></a>
+      <p style="width:65%; margin: auto;">Selskapet jobber med å skape løsninger for landbruksdrift som ivaretar livet i jorda.<br>
+          Dyrking etter skoghagemetoder fremstår ved første øyekast som lite overførbart til dagens landbrukspraksis, men det finnes mange områder man kan dra veksler på.
+          Kjernen i metoden ligger i å forstå plantenes samspill med andre organismer i jorda, og hvorfor det er så viktig å legge til rette for jordorganismene.
+          I seksjonen for sopp gis en redegjørelse for hvordan kunstgjødsel og ulike kjemikalier påvirker jordorganismene. Den aller viktigste døråpneren mot et landbruk fritt for plantevernmidler som endrer mikroorganismenes økologiske balanse, <br>
+          ligger i å reetablere bruken av sopp. Særlig viktig er mykorrhizasopp. De aller fleste planter lever symbiotisk med mykorrhiza som naturlig tilfører vann og næring og beskytter planten mot patogener. De få artene som ikke danner mykorrhizasymbiose 
+          kan i stor grad dra nytte av å samplantes med visse typer saprofyttisk sopp. Soppen på sin side er avhengig av tilstedeværelsen av en rekke andre jordorganismer.
+      </p>
+  </div>
+  <ul class="socials">
+      <li>
+          <h3>Visit us</h3>
+          <a href="https://www.facebook.com/EfferusVeksthus" target="_blank"><img src="./bilder/facebook_icon.png" width="50px"></a>
+      </li>
+  </ul>
+</footer>
+</body>
+</html>

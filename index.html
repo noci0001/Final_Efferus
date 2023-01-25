@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efferus Forlag</title>
+    <link rel="shortcut icon" href="bilder/deciduous-tree.ico">
+    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+    
+<body>
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        
+        <li><a href="./plantebistand.html">Plantebistand</a></li>
+        <li class="services">
+          <a href="./database.html">Database</a>
+        </li>
+        <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+        <li><a href="./vision.html">Vår visjon</a></li>
+        <li><a href="./events/visitUs.html">Besøk oss</a></li>
+        <li><a href="./kontakt.html">Kontakt</a></li>
+      </div>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+
+<div class="hero-image">
+
+    <div class="hero-text">
+        <span id="welcome_element">
+          <p style="font-size: 20px; padding: 2rem; padding-left: 5rem; font-family: 'Fasthand', cursive; letter-spacing: 1rem;">VELKOMMEN TIL</p>
+          <div class="logo"><a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" width="300px" alt="efferus_logo"/></a></div>
+        </span>
+    </div>
+    
+</div>
+
+<!-- ARTICLES AND EVENTS AND VIDEO -->
+
+<span id="article_animation" style="display:flex; position: absolute; top: 15rem; left: 5rem;">
+    <div class="gallery-container" >
+        <div>
+            <h1 style="color: white;">Redaktørens valg:</h1>
+            <button class="button-33" role="button"><a href="./articles/articles.html">Vil du lese mer?</a></button>
+        </div>
+        <div class="thumbnails"></div>
+            <div class="slides" id="cards" style="position: absolute; left: 18rem; z-index: 99;"></div>
+        </div>
+    </div>
+    <div style="position:relative; left: 26rem;">
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/I0rQNYMwzfY" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</span>
+
+<script >
+
+    fetch('articles/articles.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
+    function appendData(data) {
+
+
+        var cards = document.getElementById("cards");
+
+        for (var i = 0; i < 3; i++) {
+            
+            cards.innerHTML += `
+            <div class="article_card" id="myData" >
+                <div class="article_text" style="background:white; width:300px; ">
+                    <h1 id="Title${i}"> </h1>
+                    <h3 id="ReleaseDate${i}"></h3>
+                    <h2 id="BriefDesc${i}"></h2>
+                    <h3><a href="${data[i].path}"> Read more </a></h3>
+                </div>   
+            </div>
+            `;
+
+            var title = document.getElementById("Title" + i);
+            var ReleaseDate = document.getElementById("ReleaseDate" + i);
+            var BriefDesc = document.getElementById("BriefDesc" + i);
+
+            title.innerHTML = data[i].title;
+            ReleaseDate.innerHTML = data[i].release_date;
+            BriefDesc.innerHTML = data[i].briefdesc;
+        }
+    }
+</script>
+
+
+<!-- REDIRECTION -->
+
+
+<div class="redirection_section">
+    <div class="redirection_photo">
+        <a><img src="./bilder/plants_photo.png" width="400px" alt="heroImage"></a>
+        <button class="green_button" role="button"><a style="color:white;" href="fro.html">Oppdag plantene</a></button>
+    </div>
+    <div class="redirection_small1">
+        <a><img src="./bilder/forest_garden.jpg" width="180px" alt="skoghage"></a>
+        <button class="green_button" style="width: 7.5rem;" role="button"><a style="color:white;" href="trehage.html">Skoghage</a></button>
+    </div>
+    <div class="redirection_small2">
+        <a><img src="./bilder/placeholder_image1.png" width="200px" alt="placeholder"></a>
+        <button class="green_button" style="width: 7.5rem;" role="button">Oppdag plantene</button>
+    </div>
+    <div class="redirection_small3">
+        <img src="./bilder/placeholder_image3.png" width="200px" alt="placeholder">
+        <button class="green_button" style="width: 7.5rem;" role="button"><a style="color:white;">Oppdag plantene</a></button>
+    </div>
+    <div class="redirection_small4">
+        <a href="./dyrkingstorhassel.html" style="color:white;">'Dyrking av storhassel i Norge'><img src="./bilder/efferus_book.png" width="200px" height="260px" alt="placeholder"></a>
+        <!-- <button class="green_button" style="width: 7.5rem;" role="button"><a style="color:white;">'Dyrking av storhassel i Norge'</a></button> -->
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" style="padding-bottom: 2.5rem" width="300px" alt="efferus_logo"/></a>
+        <p style="width:65%; margin: auto;">Selskapet jobber med å skape løsninger for landbruksdrift som ivaretar livet i jorda.<br>
+            Dyrking etter skoghagemetoder fremstår ved første øyekast som lite overførbart til dagens landbrukspraksis, men det finnes mange områder man kan dra veksler på.
+            Kjernen i metoden ligger i å forstå plantenes samspill med andre organismer i jorda, og hvorfor det er så viktig å legge til rette for jordorganismene.
+            I seksjonen for sopp gis en redegjørelse for hvordan kunstgjødsel og ulike kjemikalier påvirker jordorganismene. Den aller viktigste døråpneren mot et landbruk fritt for plantevernmidler som endrer mikroorganismenes økologiske balanse, <br>
+            ligger i å reetablere bruken av sopp. Særlig viktig er mykorrhizasopp. De aller fleste planter lever symbiotisk med mykorrhiza som naturlig tilfører vann og næring og beskytter planten mot patogener. De få artene som ikke danner mykorrhizasymbiose 
+            kan i stor grad dra nytte av å samplantes med visse typer saprofyttisk sopp. Soppen på sin side er avhengig av tilstedeværelsen av en rekke andre jordorganismer.
+        </p>
+    </div>
+    <ul class="socials">
+        <li>
+            <h3>Besøk oss</h3>
+            <a href="https://www.facebook.com/EfferusVeksthus" target="_blank"><img src="./bilder/facebook_icon.png" width="50px"></a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+</html>
