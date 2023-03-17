@@ -64,115 +64,91 @@ p{
 
 /* .navBAR STYLING STARTS */
 
-.navbar {
-    z-index: 19;
-    position:relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #9CC855;
+.subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
     color: white;
-   }
-.nav-links a {
-    color: #fff;
-   }
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 
-/* NAVBAR MENU */
+/* Style the subnav content - positioned absolute */
 
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 1rem;
-    background-color: transparent !important;
-    border-color: transparent !important;
-    margin-top: 0.7rem;
-   }
-.menu li:hover {
-    background-color: #00bd68;
-    border-radius: 5px;
-    transition: 0.3s ease;
-    font-size: 1.5rem;
-   }
-.menu li {
-    padding: 5px 14px;
-   }
-
-/* DROPDOWN MENU */
-.services {
-    position: relative; 
-    z-index: 19;
-   }
-.dropdown {
-    background-color: var(--myGreen);
-    padding: 1em 0;
-    position: absolute; 
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-.dropdown li + li {
-    margin-top: 10px;
-   }
-.dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
     text-align: center;
-   }
-.dropdown li:hover {
-    background-color: var(--myGreen);
-   }
-.services:hover .dropdown {
-    display: block;
-   }
-
-/* RESPONSIVITY */
-
-input[type=checkbox]{
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
     display: none;
-   } 
-
-/*HAMBURGER MENU*/
-   .hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-   }
-
-@media (max-width: 768px) {
-   .menu { 
-    display:none;
     position: absolute;
-    background-color:var(--myGreen);
-    right: 0;
     left: 0;
-    text-align: center;
-    padding: 16px 0;
-   }
-   .menu li:hover {
-    display: inline-block;
-    background-color: var(--myGreen);
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
     display: block;
-   }
-   .hamburger {
-    display: block;
-   }
-   .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-   }
-   .dropdown li:hover {
-    background-color: var(--myGreen);
-   }
-   }
+  }
 
 /* HERO SECTION */
 

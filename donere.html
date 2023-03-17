@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efferus Forlag</title>
+    <link rel="shortcut icon" href="bilder/deciduous-tree.ico">
+    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<img>
+    <!-- ALWAYS ON HOME BUTTON -->
+    <a href="/index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+    
+    <!-- HEADER -->
+    <nav class="navbar" >
+        
+        <!-- LOGO -->
+        <div id=left_space class="logo"><a href="/index.html"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+        
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          
+            <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            
+            <li><a href="./plantebistand.html">Plantebistand</a></li>
+            <li class="services">
+              <a href="./database.html">Database</a>
+            </li>
+            <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+            <li><a href="./vision.html">Vår visjon</a></li>
+            <li><a href="./events/visitUs.html">Besøk oss</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+            <li><a href="./donere.html">DONERE</a></li>
+          </div>
+        </ul>
+    </nav>
+
+<section class="donate-box">
+    <div class="mission">
+        <img src="bilder/donateGirl.jpg" height="450px"/>
+        <p style="font-size: 1rem; width: 300px; font-weight: 550;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur temporibus reiciendis animi nostrum explicabo officiis ea harum nemo voluptate?</p>
+    </div>
+    <div class="donate-now">
+        <h1 style="padding-bottom: 3rem;">DONATE NOW</h1>
+
+        <div class="donate-howmuch">
+            <div class="dollars1"> <p>10</p> </div>
+            <div class="dollars2"> <p>20</p> </div>
+            <div class="dollars3"> <p>30</p> </div>
+            <div class="dollars6"> <p>60</p> </div>
+            <div class="OTHERAMOUNT"> 
+                <div>
+                    <p>Other amount</p>
+                </div>
+            </div>
+        </div>
+        <h1 style="padding-top:2rem; padding-bottom: 3rem;">Choose Payment <img src="./bilder/securepayment.png" width="35px"></h1>
+        <div class="donate-how">
+            <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png" alt="PayPal"/>
+        </div>
+        <div class="donate-how">
+            <img src="./bilder/visa.png" alt="VISA" width="250px"/>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
