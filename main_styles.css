@@ -5,6 +5,7 @@
 }
    body {
     font-family: var(--myfont);
+    background-color: #77777727;
 }
    a {
     text-decoration: none !important;
@@ -1725,4 +1726,13 @@ footer{
 
 .donate-how{
     padding: 2rem;
+}
+
+/* SALG */
+
+.salg{
+    padding-top: 3rem;
+    text-align: center;
+    background-color: #77777727;
+    height: 90vh;
 }

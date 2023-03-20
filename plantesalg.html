@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantesalg</title>
+    <link rel="shortcut icon" href="bilder/deciduous-tree.ico">
+    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/excel-viewer@1.0.0/dist/excel/xspreadsheet.css">
+    <script src="https://unpkg.com/excel-viewer@1.0.0/dist/excel/xspreadsheet.js"></script>
+    <script src="https://unpkg.com/excel-viewer@1.0.0/dist/excel/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/excel-viewer@1.0.0/dist/excel-viewer.js"></script>
+    <script>
+    new ExcelViewer("#excel-view", "./Public/docs/PLANTELISTE 2023.02.28.xlsx", {
+        theme: "dark",
+        lang: "zh_cn"
+    });
+</script>
+    <script src="script.js"></script>
+</head>
+    
+<body>
+<!-- ALWAYS ON HOME BUTTON -->
+<a href="/index.html"><img id=left_space style="position: fixed; top: 1.5rem;" src="./bilder/Efferus_logo_black.png" width="100px"></a>
+
+<!-- HEADER -->
+<nav class="navbar" >
+    
+    <!-- LOGO -->
+    <div id=left_space class="logo"><a href="/"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      
+        <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="./plantesalg.html">Plantesalg</a></li>
+        <li><a href="./database.html">Bibliothek</a></li>
+        <li class="services">
+         <a href="/">EFFERUS</a>
+         <!-- DROPDOWN MENU -->
+         <ul class="dropdown">
+             <li><a href="./vision.html">Vår visjon</a></li>
+             <li><a href="https://www.facebook.com/EfferusVeksthus" target="_blank"><img src="./bilder/facebook_icon.png" width="25px">Besøk oss</a></li>
+             <li><a href="./kontakt.html">Kontakt</a></li>
+         </ul>
+        <li><a href="./hvemer.html">Hvem er Efferus?</a></li>
+        </div>
+    </ul>
+</nav>
+<div class="salg">
+    <div>
+        <h1>Hvordan å få tak i planter fra oss.</h1>
+    </div>
+    <div>
+        <p>Salg ut fra våre demonstrasjonshager gjøres nå mest via forhåndsbestillinger og henting på avtalt tidspunkt. <br>
+            Vi frakter planter rundt Oslofjorden (kr 5 pr. kilometer) og har avtale om kvantum-sendinger <br>
+            til andre steder i Norge (opp til 1 pall til frakt på ca kr 1500,- ) med et transport-firma. <br>
+            Vi sender enkelte planter på barrot via Posten på vår og høst.</p>
+        <p>Send din bestilling til e-post: <a href="mailto:robin@efferus.no">robin@efferus.no</a><br>
+            Husk å inkludere ditt mobilnummer og din adresse <br>
+            samt forespørsler fra listen. <br>
+            Jeg vil sende deg et uforpliktende tilbud. <br>
+            Bestillinger må inn i systemet mitt <br>
+            ellers forsvinner de i mengden.</p>
+        <p>Vi tar også imot forespørsler utover hva hjemmesiden vår (efferus.no) gir en overikst over.<br>
+            Du får altså et tilbud sendt via separat e-post. (dette er ikke faktura)<br>
+            Når din bestilling er ferdig til henting/sending <br>
+            så kontakter vi deg og du får samtidig en faktura.</p>
+    </div>
+    <button style="background-color: green; border-color:transparent; border-radius:25px; padding:1rem;"><a href="./Public/docs/PLANTELISTE 2023.02.28.xlsx" download style=" color:white;"> Klikk for å laste ned og visualisere vår anleggskatalog </a></button>
+</div>
+</body>
+</html>
