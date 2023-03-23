@@ -1814,21 +1814,21 @@ footer{
 }
 
 .enlaces {
-    background-color: #393E46;
-    height: 20px;
-    min-width: 60%;
-    padding: 20px;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    transition-duration: 0.7s;
-    font-size: 1rem;
-    font-family: 'Fira Code', monospace;
+	background-color: #393E46;
+	height: 20px;
+	min-width: 60%;
+	padding: 20px;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	transition-duration: 0.7s;
+	font-size: 1rem;
+	font-family: 'Fira Code', monospace;
 
 }
 
 .enlaces:hover{
-    background-color: #FCDA05;
-    color:#222831;
-    transition-duration: 0.7s;
+	background-color: var(--myGreen);
+	color:#222831;
+	transition-duration: 0.7s;
 }
