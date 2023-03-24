@@ -340,26 +340,26 @@ input[type=checkbox]{
 		grid-row-gap: 0px;
 	}
 		
-	.hero_img { grid-area: 1 / 1 / 2 / 2; }
-	.hero_text { grid-area: 1 / 2 / 2 / 3; }
+.hero_img { grid-area: 1 / 1 / 2 / 2; }
+.hero_text { grid-area: 1 / 2 / 2 / 3; }
 		
-	.hero_text, .hero_img{
+.hero_text, .hero_img{
 		width: auto;
 		margin: auto;
 	}
 		
-	.hero_img{
+.hero_img{
 		display: flex;
 	}
 		
-	.hero_img img{
+.hero_img img{
 		box-shadow: rgba(0, 0, 0, 0.566) 0px 3px 16px;
 	}
 		
 	/* HERO SECTION 2 */
 		
 	/* The hero image */
-	.hero-image {
+.hero-image {
 	  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bilder/hero_img.png");
 	  height: 90vh;
 	  background-position: center;
