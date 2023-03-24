@@ -2,12 +2,12 @@
     {
         "id":0,
         "background_img":"",
-        "default_img":"./bilder/default_permaculture_article_img.png",
-        "title": "Climate Change Likely to Slow Plant Growth in Northern Hemisphere",
-        "author":"Robin Leeber",
-        "release_date": "Oct 22st 2022",
-        "content":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci iure voluptates dolores recusandae quidem sint earum atque cumque cupiditate aliquid? Dolores velit delectus sint. Tempore eum perspiciatis fugit nesciunt rem nostrum ad mollitia excepturi repudiandae, vel error quasi reiciendis praesentium assumenda. Sequi debitis soluta quo adipisci fugiat ipsa laboriosam quas tempora saepe dolore corrupti dolores voluptatibus, error impedit sapiente odio ullam iure modi animi voluptas illum dolor. Mollitia quam voluptatibus qui incidunt sed officia. Quos dolore, fugiat amet omnis sequi magnam neque provident officiis temporibus eaque vitae maiores tempore cumque dignissimos, explicabo aliquam ipsum veritatis. Dolore laborum est veniam nihil architecto distinctio, porro ullam autem, optio voluptas nemo fugiat tempore dolorem, perspiciatis harum. Ipsum fugiat, facere quod aspernatur accusantium ab optio reiciendis molestiae provident saepe quidem dolore iusto magni perspiciatis quam doloremque nisi qui hic dignissimos rerum repellendus neque! Maxime, magni eos? Ipsa, eos eveniet molestiae adipisci aliquam quaerat, illum tenetur ut esse nihil nisi perferendis. Sunt reprehenderit illum fugit?",
-        "briefdesc": "While the higher temperatures and CO2 levels...",
+        "default_img":"./bilder/Hjartenøtter.png",
+        "title": "Hjartenøtter | ei dyrkingsrettleiing",
+        "author":"Oddmund Frøynes og Mekjell Meland",
+        "release_date": "02.02.2023",
+        "content":"Hjartenøtt er ein ny art for kommersiell produksjon i Norge. Endå om det sporadisk er planta nokre valnøtt-tre gjennom tidene, finst det lite og ikkje systematisert kunnskap om dyrking, sortar og produktkvalitet under norske forhold. Erfaringar frå Danmark og Sør-Sverige er det næraste me kjem tilhøve som liknar dei beste dyrkingsområda i Norge. Denne dyrkingsrettleiinga omtalar vekst og utviklinga av hjartenøtt-treet, oppal av trea, gjødsling, stell og drift, hausting, plantevern og omtale av sortar.",
+        "briefdesc": "Hjartenøtt er ein ny art for kommersiell produksjon i Norge. Endå om det sporadisk er planta nokre...",
         "path": "articles/id-0.html"
     },
     {

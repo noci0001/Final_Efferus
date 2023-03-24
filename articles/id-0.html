@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artikkel</title>
-    <link rel="shortcut icon" href="bilder/deciduous-tree.ico">
-    <link href="main_styles.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="../bilder/deciduous-tree.ico">
+    <link href="../main_styles.css" rel="stylesheet" type="text/css"/>
     <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&display=swap');
@@ -25,7 +25,7 @@
 <nav class="navbar" >
     
     <!-- LOGO -->
-    <div id=left_space class="logo"><a href="/"><img src="bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
+    <div id=left_space class="logo"><a href="/"><img src="../bilder/Efferus_logo_white.PNG" width="100px" alt="efferus_logo"/></a></div>
     
     <!-- NAVIGATION MENU -->
     <ul class="nav-links">
@@ -82,10 +82,10 @@
                     <h1 id="Title${i}"> </h1>
                     <h3 id="ReleaseDateAndAuthor${i}"></h3>
                     <h2 id="Content${i}"> </h2>
+    				<button style="background-color: green; border-color:transparent; border-radius:25px; padding:1rem;"><a href="../Public/docs/Hjartenøtter.pdf" download style=" color:white;"> Klikk for å laste ned og visualisere artikkelen </a></button>
                 </div>
             </div>
             `;
-
 
             var Title = document.getElementById("Title" + i);
             var Author = document.getElementById("Author" + i);
@@ -100,7 +100,7 @@
 </script>
 <footer>
     <div class="footer-content">
-        <a href="/"><img src="bilder/Efferus_logo_white.PNG" style="padding-bottom: 2.5rem" width="300px" alt="efferus_logo"/></a>
+        <a href="/"><img src="../bilder/Efferus_logo_white.PNG" style="padding-bottom: 2.5rem" width="300px" alt="efferus_logo"/></a>
     </div>
   </footer>
 
