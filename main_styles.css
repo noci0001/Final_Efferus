@@ -242,8 +242,8 @@ input[type=checkbox]{
 /* REDIRECTION */
 
 .redirection_section {
-	margin: 7rem;
-	height: 70vh;
+	/* margin: 7rem; */
+	height: 50vh;
 	/* background-color: red; */
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -407,7 +407,7 @@ input[type=checkbox]{
 		
 	/* BUTTON */
 		
-	.green_button {
+.green_button {
 		background-color: initial;
 		background-image: linear-gradient(-180deg, #00D775, #00BD68);
 		border-radius: 0px 5px 5px 0px;
@@ -441,14 +441,14 @@ input[type=checkbox]{
 		
 	/* Main page grid */
     
-    .zero{
+.zero{
         display: flex;
         margin: auto;
         width: 50%;
         margin-bottom: 2rem;
     }
     
-    .hero {
+.hero {
         margin: auto;
         width: 50%;
         display: grid;
@@ -460,7 +460,7 @@ input[type=checkbox]{
     
     /* WELCOME ANIMATION */
     
-    #welcome_element{
+#welcome_element{
         opacity: 1;
         animation-name: welcome-fade-out;
         animation-delay: 3s;
@@ -468,25 +468,25 @@ input[type=checkbox]{
         animation-fill-mode: forwards;
       }
     
-    @keyframes welcome-fade-out{
+@keyframes welcome-fade-out{
             from { opacity: 1; }
             to { opacity: 0; }
       }
     
         
-    .one { grid-area: 1 / 1 / 2 / 2; }
-    .two { grid-area: 1 / 2 / 2 / 3; }
-    .three { grid-area: 1 / 3 / 2 / 4; }
-    .four { grid-area: 1 / 4 / 2 / 5; }
-    .five { grid-area: 2 / 1 / 3 / 2; }
-    .six { grid-area: 2 / 2 / 3 / 3; }
-    .seven { grid-area: 2 / 3 / 3 / 4; }
-    .eight { grid-area: 2 / 4 / 3 / 5; }
+.one { grid-area: 1 / 1 / 2 / 2; }
+.two { grid-area: 1 / 2 / 2 / 3; }
+.three { grid-area: 1 / 3 / 2 / 4; }
+.four { grid-area: 1 / 4 / 2 / 5; }
+.five { grid-area: 2 / 1 / 3 / 2; }
+.six { grid-area: 2 / 2 / 3 / 3; }
+.seven { grid-area: 2 / 3 / 3 / 4; }
+.eight { grid-area: 2 / 4 / 3 / 5; }
     
     
     /* ABOUT US PAGE GRID */
     
-    .wrapper_about_us {
+.wrapper_about_us {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
